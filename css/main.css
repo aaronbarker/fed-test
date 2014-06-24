@@ -1,0 +1,15 @@
+/*Red = #e03031
+grey text = #5a5a5a
+Buttons = #24b7f3 - #1885a6
+Tan bg = #f5f2ea
+blue links = #05a6cc
+Menu background = #e3e3e2
+Menu foreground = #989898
+FAQ background = #eeeeee
+
+Serif = Georgia
+Sans = Helvetica
+*/
+
+body { color: #5a5a5a; font-family: Helvetica,'Helvetica Sans',sans-serif; }
+h1,h2,h3,h4,h5,h6 { color: #e03031; font-family: Georgia,serif; font-weight: normal; }
