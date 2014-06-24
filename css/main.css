@@ -11,5 +11,71 @@ Serif = Georgia
 Sans = Helvetica
 */
 
-body { color: #5a5a5a; font-family: Helvetica,'Helvetica Sans',sans-serif; }
+body { color: #5a5a5a; background-color: white; font-family: Helvetica,'Helvetica Sans',sans-serif; font-size: 13px;}
+#content { max-width: 1000px; margin-left: auto; margin-right: auto; }
 h1,h2,h3,h4,h5,h6 { color: #e03031; font-family: Georgia,serif; font-weight: normal; }
+h1 {
+    font-size: 3.2em;
+  }
+h2 {
+    color: white;
+  
+    font-size: 2.8em;
+    margin-bottom: 0.3em;
+}
+header {  }
+header h1 {  }
+header p { margin-top: -1em; font-size: 1.73em; margin-bottom: 0.5em;}
+section.hero { background: url(../images/hero1-desktop.jpg) center top no-repeat #fff; width: 100%; background-size: 100% 100%; border-top: 8px solid white; padding-top: 44%; max-height: 256px; margin-bottom: 20px; max-width: 960px; background: white; overflow: hidden; position: relative; }
+.banner { position: absolute; top: 0; width: 100%; height: 100%; }
+.hero-container { height: 100%; position: relative; display: block; border-color: white; border-style: solid; width: 100%; float: left; border-bottom-width: 8px; overflow: hidden; } 
+.hero-container a { position: relative; display: block; }
+.hero-container img { width: 100%; vertical-align: middle; }
+.hero-container figure { margin: 0; }
+.hero-text { position: absolute; top: 17%; left: 9%; width: 40%; }
+.h2 {}
+.banner p {
+    color: white;
+    font-size: 1.25em;
+    line-height: 1.6em;
+    width: 85%;
+}
+button.btn-cta {
+    background: #24b7f3;  background: -moz-linear-gradient(top,  #24b7f3 0%, #1885a6 100%);  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#24b7f3), color-stop(100%,#1885a6));  background: -webkit-linear-gradient(top,  #24b7f3 0%,#1885a6 100%);  background: -o-linear-gradient(top,  #24b7f3 0%,#1885a6 100%);  background: -ms-linear-gradient(top,  #24b7f3 0%,#1885a6 100%);  background: linear-gradient(to bottom,  #24b7f3 0%,#1885a6 100%);  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24b7f3', endColorstr='#1885a6',GradientType=0 );
+    border: none;
+    min-width: 13em;
+    color: white;
+    font-size: 1em;
+    padding: 12px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+nav.subHero {}
+ul.hor-row {}
+ul.hor-row li {}
+ul.hor-row li a {}
+.section-text {}
+span.step {}
+h3 {}
+.section-text p {}
+.actions {}
+.actions video {}
+.actions button.btn-cta {}
+.section-image {}
+.section-image img {}
+.img-responsive {}
+section.faq {}
+#accordion {}
+#accordion h5 {}
+#accordion div {}
+#accordion div p {}
+section.resources {}
+.resourceText {}
+.resourceText h3 {}
+ul.resourceList {}
+ul.resourceList li {}
+.resourceImage {}
+.resourceImage img {}
+
+
+.subtle { background-color: #f5f2ea; }
