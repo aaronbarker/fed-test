@@ -23,8 +23,8 @@ Sans = Helvetica
 
 }
 
-body { color: #5a5a5a; background-color: white; font-family: Helvetica,'Helvetica Sans',sans-serif; font-size: 13px;}
-.whiteContent, .beigeContent { width: 100%; }
+body { color: #5a5a5a; background-color: white; font-family: Helvetica,'Helvetica Sans',sans-serif; font-size: 13px; margin: 0 0 3em 0;}
+.whiteContent, .beigeContent { width: 96%; padding: 0 2%;}
 .whiteContent { background-color: #fff; }
 .beigeContent { background-color: #f5f2ea; overflow: auto;}
 section, header, nav { max-width: 960px; margin-left: auto; margin-right: auto; }
@@ -35,8 +35,8 @@ h2 { color: white; font-size: 2.8em; margin-bottom: 0.3em; }
 header {  }
 header h1 {  }
 header p { margin-top: -1em; font-size: 1.73em; margin-bottom: 0.5em;}
-section.hero { background: url(../images/hero1-desktop.jpg) center top no-repeat #fff; width: 100%; /* background-size: 100% 100%; */ border-top: 8px solid white; padding-top: 32%; max-height: 256px; margin-bottom: 20px; max-width: 960px; background: white; overflow: hidden; position: relative; }
-.banner { position: absolute; top: 0; width: 100%; height: 100%;}
+section.hero { width: 100%; border-top: 8px solid white; padding-top: 41%; margin-bottom: 20px; max-width: 960px; background: white; overflow: hidden; position: relative;}
+.banner { position: absolute; top: 0; width: 100%; height: 100%; max-height: 375px;}
 .hero-container { height: 100%; position: relative; display: block; border-color: white; border-style: solid; width: 100%; float: left; border-bottom-width: 8px; overflow: hidden; margin: 0; padding: 0;} 
 .hero-container a { position: relative; display: block; }
 .hero-container img { width: 100%; vertical-align: middle; }
@@ -64,7 +64,8 @@ ul.hor-row li.nav-temple:after { content:"e"; }
 .section-image.right { float: right; }
 .row { clear: both;}
 span.step { text-transform: uppercase; }
-h3 { font-size: 2em; margin-top: 0; margin-bottom: 0; }
+h3 { font-size: 2em; margin-top: 0; margin-bottom: 0;}
+.faq > h3 { margin-top: 1em; margin-bottom: 0.5em; }
 .section-text p { line-height: 1.5em; font-size: 1.3em; }
 .actions { margin-top: 4em; }
 .actions video { float: left; margin-right: 1.5em; }
@@ -74,16 +75,15 @@ h3 { font-size: 2em; margin-top: 0; margin-bottom: 0; }
 .img-responsive {}
 section.faq {}
 #accordion {}
-#accordion h5 {}
-#accordion div {}
-#accordion div p {}
+#accordion .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { border: none; background-color: #eee; border-radius: 0; }
+#accordion .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{ border: none; background-color: #eee; border-radius: 0; padding: 0.5em 1em 0.4em 0.7em;}
+#accordion h3 { font-family: Helvetica; font-weight: normal; font-size: 18px; color: #05a6cc; margin-top: 0.3em;}
+#accordion .ui-widget-content { border: none; border-radius: 0; }
+.ui-accordion .ui-accordion-content { padding: 0 1em 1em; }
+#accordion div p { padding: 0; margin:  0; color: #5a5a5a; }
 section.resources {}
-.resourceText {}
-.resourceText h3 {}
-ul.resourceList {}
-ul.resourceList li {}
-.resourceImage {}
-.resourceImage img {}
-
-
-.subtle { background-color: #f5f2ea; width:  100%; left: 0; right: 0;}
+.resourceText { float: left; }
+.resourceText h3 { margin-top: 0.4em; }
+ul.resourceList { padding-left: 0; padding-top: 0.1em; }
+ul.resourceList li { list-style: none; color: #05a6cc; margin: 1em 0; }
+.resourceImage { float: right; padding-top: 1em; margin-bottom: 2em; }
