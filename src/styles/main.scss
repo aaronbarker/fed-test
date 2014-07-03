@@ -37,19 +37,21 @@ $color_main_fg:#505050;
 
 
 body{
+    background:white;
     color:$color_main_fg;
+    font-family:$font-sans;
+    font-size:16px;
+    line-height: 1.5em;
 }
 
-.browsehappy {
-    // margin: 0.2em 0;
-    // background: #ccc;
-    // color: #000;
-    // padding: 0.2em 0;
+.steps,.resources, .faq dd, .faq dt{
+    background-color:$tan;
 }
 
 
 h1,h2,h3,h4,h5,h6{
     font-family:$font-serif;
+    font-weight:normal;
     small{
         color:$color_main_fg;
         font-family:$font-sans;
@@ -57,8 +59,6 @@ h1,h2,h3,h4,h5,h6{
         display:block;
     }
 }
-
-
 
 h1,h2{
     color:$red;
@@ -70,6 +70,14 @@ a, a:visited{
 
 a:hover, a:active{
     color:$red;
+}
+
+
+.browsehappy {
+    // margin: 0.2em 0;
+    // background: #ccc;
+    // color: #000;
+    // padding: 0.2em 0;
 }
 
 
