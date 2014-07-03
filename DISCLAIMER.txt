@@ -1,0 +1,46 @@
+Disclaimer, while I haven't been able to dedicate a meaningful chunk of time until today to write code (traveling, work, family, responsibilites, etc), I did clone the repo on Monday, June 30, to review the project requirements and specifications. After reviewing/analyizing the specs, I spent bits of available time reading, learning and fiddling about/with the following topics I think will be relevant to this project / test / opportunity...
+
+
+Grunt
+------
+http://gruntjs.com/getting-started
+http://gruntjs.com/project-scaffolding --> lead me to Yeoman
+
+
+Yeoman
+------
+http://yeoman.io/
+https://github.com/yeoman/generator-webapp
+
+
+
+SVG Icons vs Icon Font
+-----
+http://css-tricks.com/icon-fonts-vs-svg/
+http://css-tricks.com/svg-sprites-use-better-icon-fonts/
+
+
+Icon Fonts
+------
+https://github.com/sapegin/grunt-webfont
+http://css-tricks.com/html-for-icon-font-usage/
+
+
+Flexbox
+-------
+http://caniuse.com/flexbox
+http://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+
+Autoprefixer
+------
+http://css-tricks.com/autoprefixer/
+http://blog.romanliutikov.com/post/63963193492/healthy-css-with-compass-and-autoprefixer
+
+
+Vertical Alignment
+--------
+http://css-tricks.com/vertically-center-multi-lined-text/
+
+
+Starting the 1 hour timer now (2014-07-03 @ 11:11) with an initial commit...
