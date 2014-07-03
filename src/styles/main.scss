@@ -1,31 +1,41 @@
 // bower:scss
 // endbower
 
-body {
-    background: #fafafa;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333;
-}
 
-.hero-unit {
-    margin: 50px auto 0 auto;
-    width: 300px;
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 30px;
-    background-color: #eee;
-    border-radius: 6px;
-    padding: 60px;
-    h1 {
-        font-size: 60px;
-        line-height: 1;
-        letter-spacing: -1px;
-    }
-}
+
+// ============================
+// Red = #e03031
+// grey text = #5a5a5a
+// Buttons = #24b7f3 - #1885a6
+// Tan bg = #f5f2ea
+// blue links = #05a6cc
+// Menu background = #e3e3e2
+// Menu foreground = #989898
+// FAQ background = #eeeeee
+
+// Serif = Georgia
+// Sans = Helvetica
+
+
+$red:#e03031;
+$grey:#5a5a5a;
+$button_color_0:#24b7f3;
+$button_color_1:#1885a6;
+$tan:#f5f2ea;
+$blue:#05a6cc;
+$menu_color_bg:#e3e3e2;
+$menu_color_fg:#989898;
+$faq_color_bg:#eeeeee;
+
+$font_serif:"Georgia";
+$font_sans:"Helvetica";
+
+
+
 
 .browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+    // margin: 0.2em 0;
+    // background: #ccc;
+    // color: #000;
+    // padding: 0.2em 0;
 }
