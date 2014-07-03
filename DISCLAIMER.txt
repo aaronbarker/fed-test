@@ -1,3 +1,9 @@
+===================================
+
+12:52: meaningless change to mark time AFK
+
+===================================
+
 Disclaimer, while I haven't been able to dedicate a meaningful chunk of time until today to write code (traveling, work, family, responsibilites, etc), I did clone the repo on Monday, June 30, to review the project requirements and specifications. After reviewing/analyizing the specs, I spent bits of available time reading, learning and fiddling about/with the following topics I think will be relevant to this project / test / opportunity...
 
 
