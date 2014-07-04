@@ -5,17 +5,17 @@
 
 @font-face {
     font-family:"fedtest-icons";
-    src:url("../fonts/fedtest-icons-2df96661a0f6da7e89d416efa8221899.eot");
+    src:url("fonts/fedtest-icons-2df96661a0f6da7e89d416efa8221899.eot");
     font-weight:normal;
     font-style:normal;
 }
 @font-face {
 	font-family:"fedtest-icons";
-	src:url("../fonts/fedtest-icons-2df96661a0f6da7e89d416efa8221899.eot");
-	src:url("../fonts/fedtest-icons-2df96661a0f6da7e89d416efa8221899.eot?#iefix") format("embedded-opentype"),
-		url("../fonts/fedtest-icons-2df96661a0f6da7e89d416efa8221899.woff") format("woff"),
-		url("../fonts/fedtest-icons-2df96661a0f6da7e89d416efa8221899.ttf") format("truetype"),
-		url("../fonts/fedtest-icons-2df96661a0f6da7e89d416efa8221899.svg?#fedtest-icons") format("svg");
+	src:url("fonts/fedtest-icons-2df96661a0f6da7e89d416efa8221899.eot");
+	src:url("fonts/fedtest-icons-2df96661a0f6da7e89d416efa8221899.eot?#iefix") format("embedded-opentype"),
+		url("fonts/fedtest-icons-2df96661a0f6da7e89d416efa8221899.woff") format("woff"),
+		url("fonts/fedtest-icons-2df96661a0f6da7e89d416efa8221899.ttf") format("truetype"),
+		url("fonts/fedtest-icons-2df96661a0f6da7e89d416efa8221899.svg?#fedtest-icons") format("svg");
 	font-weight:normal;
 	font-style:normal;
 }

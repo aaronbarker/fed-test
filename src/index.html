@@ -6,17 +6,17 @@
         <meta name="description" content="this is the front-end developer test for lds.org">
         <meta name="viewport" content="width=device-width">
         <link rel="shortcut icon" href="/favicon.ico">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
-
         <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css">
-        <link rel="stylesheet" href="styles/fedtest-icons.css">
         <!-- endbower -->
         <!-- endbuild -->
+
         <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/fedtest-icons.css">
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
+
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="../bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
@@ -53,20 +53,28 @@
                     <div class="step step1">
                         <h2><small>Step 1</small> The best step you can take</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nemo unde magnam explicabo eum corporis quod laudantium placeat qui accusantium fugiat voluptate. Expedita voluptates blanditiis sunt quidem dignissimos officiis repellat?</p>
-                        <a class="button cta" href="#">Share Photos and Stories</a>
+                        <ul class="links">
+                            <li><a class="video-thumb" href="#"><img src="images/thumb1.jpg" alt="Step 1 Video" /></a></li>
+                            <li><a class="button cta" href="#">Share Photos and Stories</a></li>
+                        </ul>
                     </div>
 
                     <div class="step step2">
                         <h2><small>Step 2</small> Getting higher on the steps</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nemo unde magnam explicabo eum corporis quod laudantium placeat qui accusantium fugiat voluptate. Expedita voluptates blanditiis sunt quidem dignissimos officiis repellat? Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a class="button cta" href="#">View Your Experiences</a>
+                        <ul class="links">
+                            <li><a class="video-thumb" href="#"><img src="images/thumb2.jpg" alt="Step 2 Video" /></a></li>
+                            <li><a class="button cta" href="#">View Your Experiences</a></li>
+                        </ul>
                     </div>
 
                     <div class="step step3">
                         <h2><small>Step 3</small> No more steps left, you are there</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nemo unde magnam explicabo eum corporis quod laudantium placeat qui accusantium fugiat voluptate. Expedita voluptates blanditiis sunt quidem dignissimos officiis repellat? Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-                        <a class="button cta" href="#">Walk with your family</a>
+                        <ul class="links">
+                            <li><a class="video-thumb" href="#"><img src="images/thumb3.jpg" alt="Step 3 Video" /></a></li>
+                            <li><a class="button cta" href="#">Walk with your family</a></li>
+                        </ul>
                     </div>
 
             </section>
@@ -109,7 +117,7 @@
         <!-- endbuild -->
 
 
-        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <!-- build:js({src,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
     </body>

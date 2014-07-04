@@ -370,7 +370,7 @@ module.exports = function (grunt) {
         webfont: {
             icons: {
                 src: '<%= config.app %>/icons/*.svg',
-                dest: '<%= config.app %>/fonts',
+                dest: '<%= config.app %>/styles/fonts',
                 destCss: '<%= config.app %>/styles',
                 options: {
                     templateOptions: {
@@ -432,7 +432,7 @@ module.exports = function (grunt) {
         'uglify',
         'copy:dist',
         'modernizr',
-        'rev',
+        // 'rev',
         'usemin',
         'htmlmin'
     ]);

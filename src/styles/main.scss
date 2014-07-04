@@ -98,6 +98,30 @@ a.button{
 }
 
 
+.video-thumb{
+    display:block;
+    height:90px;
+    position:relative;
+    &:after{
+        color:white;
+        content:"\f104";
+        display:table-cell;
+        font-family:"fedtest-icons";
+        font-size:2em;
+        left:0;
+        line-height:90px;
+        position:absolute;
+        right:0;
+        text-align:center;
+        text-shadow:3px 3px 3px $grey;
+        top:0;
+        vertical-align:middle;
+    }
+    &:hover:after{
+        color:$grey;
+    }
+}
+
 .browsehappy {
     // margin: 0.2em 0;
     // background: #ccc;
@@ -194,6 +218,19 @@ a.button{
 .steps{
     .step{
         margin-bottom:3em;
+    }
+
+
+    .links{
+        overflow:hidden;
+        li{
+            @include clearfix();
+            float:left;
+            margin-right:1.5em;
+            img{
+                border:1px solid #cacaca;
+            }
+        }
     }
 }
 
