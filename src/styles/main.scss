@@ -155,16 +155,18 @@ a.button{
                 vertical-align: middle;
                 &:before,&:after{
                     display:block;
-                    content:"\0053";
+                    content:"\0abf";
                     position:absolute;
+                    text-align:center;
                     top:33%;
-                    width:32px;
+                    width:75px;
                 }
                 &:before{
-                    left:1em;
+                    left:0;
                 }
                 &:after{
                     right:0;
+                    text-align:right;
                 }
                 &:hover{
                     color:lighten($grey, 15%);
