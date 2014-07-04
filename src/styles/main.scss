@@ -252,6 +252,65 @@ a.button{
         background:$tan url(../images/family-line.jpg) 95% center no-repeat scroll;
         min-height:350px;
     }
+
+    .steps{
+        overflow:hidden;
+
+        .step{
+            min-height:300px;
+            position:relative;
+
+            &:after, &:before{
+                box-shadow:3px 3px 3px 3px lighten($grey, 25%);
+                border:10px solid white;
+                content:"";
+                display:block;
+                height:300px;
+                position:absolute;
+                transform:scale(.85);
+                top:0;
+                width:450px;
+            }
+
+            &:nth-child(odd){
+                padding-right:500px;
+                &:after{
+                    right:$page_gutter;
+                }
+                &:before{
+                    display:none;
+                }
+            }
+
+            &:nth-child(even){
+                padding-left:500px;
+            }
+        }
+
+        .step1:after{
+            background:transparent url("../images/family-book.jpg") right top no-repeat scroll;
+            background-size:cover;
+        }
+
+        .step2:before, .step2:after{
+            background:transparent url("../images/rotated.jpg") left top no-repeat scroll;
+            background-size:cover;
+            left:0;
+        }
+
+        .step2:before{
+            transform:scale(.85)rotateZ(-3deg);
+        }
+
+        .step2:after{
+            transform:scale(.85)rotateZ(3deg);
+        }
+
+        .step3:after{
+            background:transparent url("../images/family-temple.jpg") right top no-repeat scroll;
+            background-size:cover;
+        }
+    }
 }
 
 // Big o' Desktops
