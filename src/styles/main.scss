@@ -23,6 +23,7 @@ body{
     font-family:$font-sans;
     font-size:16px;
     line-height: 1.5em;
+    // overflow-x:hidden;
 }
 
 header {
@@ -80,6 +81,7 @@ ul, ol, dl{
 
 .steps, .resources-wrapper, .faq dd, .faq dt{
     background-color:$tan;
+
 }
 
 a.button{
@@ -90,6 +92,9 @@ a.button{
     font-size:85%;
     margin:0.5em 0;
     padding:0.5em 1em;
+    &:hover{
+        background: linear-gradient(lighten($button_color_0,5%), lighten($button_color_1,5%));
+    }
 }
 
 
@@ -109,34 +114,29 @@ a.button{
         background:$grey url(../images/hero1-desktop.jpg) right center no-repeat scroll;
         background-size:cover;
         min-height:100%;
+        padding:10%;
+
+        h2{
+            font-size:250%;
+            line-height:1em;
+            max-width:45%;
+        }
+        p{
+            max-width:30%;
+        }
+        h2,p{
+            color:white;
+            text-shadow:3px 3px 3px darken($grey, 15%);
+        }
     }
 }
 
-
-.hero{
-    h2{
-        font-size:250%;
-        line-height:1em;
-        max-width:45%;
-    }
-    p{
-        max-width:30%;
-    }
-    h2,p{
-        color:white;
-        text-shadow:3px 3px 3px darken($grey, 15%);
-    }
-
-    padding:10%;
-}
 
 #main_nav{
-
     ul{
         align-items:center;
         display:flex;
         justify-content:space-between;
-
 
         li{
             background-color:#e3e3e3;
@@ -144,6 +144,7 @@ a.button{
             list-style: none;
             margin-right:1em;
             position:relative;
+
 
             &:last-child{
                 margin-right:0;
@@ -179,6 +180,10 @@ a.button{
                 }
                 &:hover{
                     color:lighten($grey, 15%);
+                    &:before{
+                        transform: scale(1.1);
+
+                    }
                 }
 
             }
@@ -197,9 +202,24 @@ a.button{
     dt{
         cursor:pointer;
         margin-top:0.5em;
-        padding:0.5em;
+        padding:0.5em 3em 0.5em 0.5em;
+        position:relative;
         &:first-child{
             margin-top:0;
+        }
+        &:after{
+            color:$grey;
+            content:"\f101";
+            font-family:"fedtest-icons";
+            position:absolute;
+            right:1em;
+            text-align:right;
+            transform:rotate(0);
+            transition:transform .5s;
+            vertical-align:middle;
+        }
+        &.expanded:after{
+            transform:rotate(90deg);
         }
     }
     dd{
@@ -222,15 +242,16 @@ a.button{
 
 // All phones and (PH|T)ablets
 @media screen and (max-width:$mq_tablet_end){
-    .hero{
-        > *{
-            max-width: 75%;
+    #fold_wrapper .hero{
+        > h2, > p{
+            max-width: 100%;
         }
     }
 
     #main_nav ul li a {
         @include hide-text();
         display:block;
+        padding:0;
         width:0;
         &:after{
             display:none;
@@ -264,6 +285,7 @@ a.button{
         .step{
             min-height:300px;
             position:relative;
+
 
             &:after, &:before{
                 box-shadow:3px 3px 3px 3px lighten($grey, 25%);
@@ -329,17 +351,12 @@ a.button{
 
 
 // Mobile Only
-@media screen and (max-width:$mq_phone_end){
-
-}
+@media screen and (max-width:$mq_phone_end){}
 
 
 
 // (PH|T)ablet Only
-@media screen and (min-width: $mq_phone_end+1) and (max-width:$mq_tablet_end){
-
-
-}
+@media screen and (min-width: $mq_phone_end+1) and (max-width:$mq_tablet_end){}
 
 
 // Small Desktop only
@@ -355,7 +372,7 @@ a.button{
 
 
 
-// Big o' Desktops
+// Big o' Desktops Only
 @media screen and (min-width: $mq_normal_end + 1){
     #main_nav a{
         font-size:100%;
