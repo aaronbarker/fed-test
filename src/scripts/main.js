@@ -1,8 +1,8 @@
 $(function(){
 	'use strict';
-	$('dd').hide().prev('dt').click(
+	$('dd').addClass('collapse').prev('dt').click(
 		function(){
-			$(this).toggleClass('expanded').next('dd').toggleClass('expanded').slideToggle();
+			$(this).toggleClass('expanded').next('dd').toggleClass('collapse expanded');
 		}
 	);
 

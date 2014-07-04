@@ -43,6 +43,7 @@ h1,h2,h3,h4,h5,h6{
         font-family:$font-sans;
         font-size:50%;
         display:block;
+        text-transform: uppercase;
     }
 }
 
@@ -99,13 +100,13 @@ a.button{
 
 
 .video-thumb{
-    display:block;
+    display:inline-block;
     height:90px;
     position:relative;
     &:after{
         color:white;
         content:"\f104";
-        display:table-cell;
+        display:block;
         font-family:"fedtest-icons";
         font-size:2em;
         left:0;
@@ -202,7 +203,7 @@ a.button{
                     right:1em;
                     text-align:right;
                 }
-                &:hover{
+                &:hover, &:active{
                     color:lighten($grey, 15%);
                     &:before{
                         transform: scale(1.1);
@@ -216,6 +217,7 @@ a.button{
 }
 
 .steps{
+
     .step{
         margin-bottom:3em;
     }
@@ -252,15 +254,29 @@ a.button{
             right:1em;
             text-align:right;
             transform:rotate(0);
-            transition:transform .5s;
+            animation:turn-down-undo $animation-slide-time ease-in-out;
             vertical-align:middle;
         }
         &.expanded:after{
+            animation:turn-down $animation-slide-time ease-in-out;
             transform:rotate(90deg);
         }
     }
+
     dd{
+        overflow:hidden;
         padding:0 0.5em;
+
+        &.collapse{
+            animation: slideClose $animation-slide-time ease-in-out;
+            height:auto;
+            max-height:0;
+        }
+        &.expanded{
+            animation: slideOpen $animation-slide-time ease-in-out;
+            padding-bottom:0.5em;
+
+        }
     }
 }
 
@@ -388,7 +404,14 @@ a.button{
 
 
 // Mobile Only
-@media screen and (max-width:$mq_phone_end){}
+@media screen and (max-width:$mq_phone_end){
+    .steps .links li {
+        float:none;
+        margin-bottom:1em;
+    }
+
+
+}
 
 
 
@@ -405,10 +428,6 @@ a.button{
 
 }
 
-
-
-
-
 // Big o' Desktops Only
 @media screen and (min-width: $mq_normal_end + 1){
     #main_nav a{
@@ -424,4 +443,34 @@ a.button{
 
 
 
+////// Animations \\\\\\\
+// animating auto height: 
+// http://stackoverflow.com/questions/3508605/css-transition-height-0-to-height-auto
+@keyframes slideOpen {
+    0%{ max-height:0; opacity:0; }
+    20%{ max-height:0; }
+    80%{ max-height:1000px; padding-top:1em;  }
+    100%{ max-height:1000px; opacity:1; }
+}
+
+@keyframes slideClose {
+    0%{ max-height:1000px; opacity:1; }
+    20%{ max-height:1000px; padding-top:1em;  }
+    80%{ max-height:0; }
+    100%{ max-height:0; opacity:0; }
+}
+
+@keyframes turn-down {
+    0%{transform:rotate(0deg); }
+    15%{transform:rotate(-15deg); }
+    80%{transform:rotate(105deg); }
+    100%{transform:rotate(90deg); }
+}
+
+@keyframes turn-down-undo {
+    0%{transform:rotate(90deg); }
+    15%{transform:rotate(105deg); }
+    80%{transform:rotate(-15deg); }
+    100%{transform:rotate(0deg); }
+}
 
