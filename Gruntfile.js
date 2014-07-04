@@ -12,6 +12,8 @@ module.exports = function (grunt) {
     // Load grunt tasks automatically
     require('load-grunt-tasks')(grunt);
 
+
+
     // Time how long tasks take. Can help when optimizing build times
     require('time-grunt')(grunt);
 
@@ -178,7 +180,7 @@ module.exports = function (grunt) {
         // Add vendor prefixed styles
         autoprefixer: {
             options: {
-                browsers: ['last 2 versions']
+                browsers: ['last 3 versions']
             },
             dist: {
                 files: [{
@@ -363,7 +365,26 @@ module.exports = function (grunt) {
                 'imagemin',
                 'svgmin'
             ]
+        },
+
+        webfont: {
+            icons: {
+                src: '<%= config.app %>/icons/*.svg',
+                dest: '<%= config.app %>/fonts',
+                destCss: '<%= config.app %>/styles',
+                options: {
+                    templateOptions: {
+                        baseClass: 'icon',
+                        classPrefix: 'icon-',
+                        mixinPrefix: 'icon-'
+                    },
+                    font: 'fedtest-icons',
+                    syntax:'bootstrap',
+                    htmlDemo:false
+                }
+            }
         }
+
     });
 
 
@@ -415,6 +436,7 @@ module.exports = function (grunt) {
         'usemin',
         'htmlmin'
     ]);
+
 
     grunt.registerTask('default', [
         'newer:jshint',

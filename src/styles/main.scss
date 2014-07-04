@@ -133,19 +133,22 @@ a.button{
 #main_nav{
 
     ul{
+        align-items:center;
         display:flex;
-        list-style: none;
         justify-content:space-between;
+
 
         li{
             background-color:#e3e3e3;
             flex-grow:1;
+            list-style: none;
             margin-right:1em;
             position:relative;
 
             &:last-child{
                 margin-right:0;
             }
+
             a{
                 color:$grey;
                 display:table-cell;
@@ -153,19 +156,25 @@ a.button{
                 padding:0 50px 0 75px;
                 text-align: left;
                 vertical-align: middle;
+                width:250px;
                 &:before,&:after{
                     display:block;
-                    content:"\0abf";
+                    font-family:"fedtest-icons";
                     position:absolute;
                     text-align:center;
-                    top:33%;
+                    top:0;
+                    line-height:75px;
+                    vertical-align:middle;
                     width:75px;
                 }
                 &:before{
                     left:0;
+                    font-size:50px
                 }
+
                 &:after{
-                    right:0;
+                    content:"\f101";
+                    right:1em;
                     text-align:right;
                 }
                 &:hover{
@@ -207,7 +216,11 @@ a.button{
 }
 
 
-// up to (PH|T)ablet
+
+
+//// Responsive Defs \\\
+
+// All phones and (PH|T)ablets
 @media screen and (max-width:$mq_tablet_end){
     .hero{
         > *{
@@ -217,42 +230,32 @@ a.button{
 
     #main_nav ul li a {
         @include hide-text();
+        display:block;
+        width:0;
         &:after{
             display:none;
+            width:0;
         }
         &:before{
-            display:table-cell;
-            left:50%;
-            // position:relative;
-            text-align:-25%;
+            display:block;
+            overflow:hidden;
+            text-align:center;
             text-indent:0;
-            vertical-align:middle;
-
+            width:100%;
         }
     }
 
 }
 
 
-// Mobile Only
-@media screen and (max-width:$mq_phone_end){
-
-}
 
 
 
-// (PH|T)ablet Only
-@media screen and (min-width: $mq_phone_end+1) and (max-width:$mq_tablet_end){
-
-
-}
-
-
-// Tablet (landscape) & Desktop
+// All Desktops
 @media screen and (min-width: $mq_tablet_end+1){
-    .resources-wrapper{
-        background:$tan url(../images/family-line.jpg) 95% center no-repeat scroll;
-        min-height:350px;
+    #main_nav a{
+        font-size:85%;
+        line-height:1.25em;
     }
 
     .steps{
@@ -313,14 +316,55 @@ a.button{
             background-size:cover;
         }
     }
+
+    .resources-wrapper{
+        background:$tan url(../images/family-line.jpg) 95% center no-repeat scroll;
+        min-height:350px;
+    }
+
+
 }
 
+
+
+
+// Mobile Only
+@media screen and (max-width:$mq_phone_end){
+
+}
+
+
+
+// (PH|T)ablet Only
+@media screen and (min-width: $mq_phone_end+1) and (max-width:$mq_tablet_end){
+
+
+}
+
+
+// Small Desktop only
+@media screen and (min-width: $mq_tablet_end+1) and (max-width:$mq_small_end){
+    #main_nav a{
+        font-size:75%;
+        line-height:1.25em;
+    }
+
+}
+
+
+
+
+
 // Big o' Desktops
-@media screen and (min-width: $mq_normal_end+1){
+@media screen and (min-width: $mq_normal_end + 1){
+    #main_nav a{
+        font-size:100%;
+    }
+
     .wrapper > *{
         margin-left:auto;
         margin-right:auto;
-        width:1200px;
+        width:$mq_normal_end - 50;
     }
 }
 
