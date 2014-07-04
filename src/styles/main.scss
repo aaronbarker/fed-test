@@ -4,7 +4,7 @@
 
 
 @import "variables";
-
+@import "mixins";
 
 
 ::selection{
@@ -74,11 +74,11 @@ ul, ol, dl{
 // End Generic, Start Specific //
 
 .wrapper{
-    padding:1.5em;
+    padding:$page_gutter;
 }
 
 
-.steps,.resources, .faq dd, .faq dt{
+.steps, .resources-wrapper, .faq dd, .faq dt{
     background-color:$tan;
 }
 
@@ -87,7 +87,7 @@ a.button{
     color:white;
     background: linear-gradient($button_color_0, $button_color_1);
     display:inline-block;
-    font-size:75%;
+    font-size:85%;
     margin:0.5em 0;
     padding:0.5em 1em;
 }
@@ -114,8 +114,13 @@ a.button{
 
 
 .hero{
-    > *{
+    h2{
+        font-size:250%;
+        line-height:1em;
         max-width:45%;
+    }
+    p{
+        max-width:30%;
     }
     h2,p{
         color:white;
@@ -133,18 +138,37 @@ a.button{
         justify-content:space-between;
 
         li{
+            background-color:#e3e3e3;
             flex-grow:1;
             margin-right:1em;
+            position:relative;
+
             &:last-child{
                 margin-right:0;
             }
             a{
-                background-color:#e3e3e3;
                 color:$grey;
-                display:block;
-                height:50px;
+                display:table-cell;
+                height:75px;
+                padding:0 50px 0 75px;
                 text-align: left;
                 vertical-align: middle;
+                &:before,&:after{
+                    display:block;
+                    content:"\0053";
+                    position:absolute;
+                    top:33%;
+                    width:32px;
+                }
+                &:before{
+                    left:1em;
+                }
+                &:after{
+                    right:0;
+                }
+                &:hover{
+                    color:lighten($grey, 15%);
+                }
 
             }
         }
@@ -172,41 +196,71 @@ a.button{
     }
 }
 
-// Mobile
-@media screen and (max-width:480px){
-    html, body{
-        height:100%;
+
+.resources{
+    li{
+        font-size:85%;
+        padding:0.5em 0;
     }
+}
 
 
-
+// up to (PH|T)ablet
+@media screen and (max-width:$mq_tablet_end){
     .hero{
         > *{
             max-width: 75%;
         }
     }
 
-    #main_nav{
-        bottom:1%;
-        // position:absolute;
+    #main_nav ul li a {
+        @include hide-text();
+        &:after{
+            display:none;
+        }
+        &:before{
+            display:table-cell;
+            left:50%;
+            // position:relative;
+            text-align:-25%;
+            text-indent:0;
+            vertical-align:middle;
 
+        }
     }
 
 }
 
 
-
-
-
-// (PH|T)ablet
-@media screen and (min-width: 500px) and (max-width:799){
+// Mobile Only
+@media screen and (max-width:$mq_phone_end){
 
 }
 
 
-// Desktop
-@media screen and (min-width: 800px){
 
+// (PH|T)ablet Only
+@media screen and (min-width: $mq_phone_end+1) and (max-width:$mq_tablet_end){
+
+
+}
+
+
+// Tablet (landscape) & Desktop
+@media screen and (min-width: $mq_tablet_end+1){
+    .resources-wrapper{
+        background:$tan url(../images/family-line.jpg) 95% center no-repeat scroll;
+        min-height:350px;
+    }
+}
+
+// Big o' Desktops
+@media screen and (min-width: $mq_normal_end+1){
+    .wrapper > *{
+        margin-left:auto;
+        margin-right:auto;
+        width:1200px;
+    }
 }
 
 
