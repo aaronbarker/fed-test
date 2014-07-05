@@ -1,0 +1,43 @@
+// ============================
+// Red = #e03031
+// grey text = #5a5a5a
+// Buttons = #24b7f3 - #1885a6
+// Tan bg = #f5f2ea
+// blue links = #05a6cc
+// Menu background = #e3e3e2
+// Menu foreground = #989898
+// FAQ background = #eeeeee
+
+// Serif = Georgia
+// Sans = Helvetica
+
+
+$red:#e03031;
+$grey:#5a5a5a;
+$button-color-0:#24b7f3;
+$button-color-1:#1885a6;
+$tan:#f5f2ea;
+$blue:#05a6cc;
+$menu-color-bg:#e3e3e2;
+$menu-color-fg:#989898;
+$faq-color-bg:#eeeeee;
+
+$font-serif:"Georgia";
+$font-sans:"Helvetica";
+
+
+// base styles
+$color-main-fg:#505050;
+$page-gutter:1.5em;
+$page-gutter-tablet:$page-gutter/3;
+$page-gutter-mobile:$page-gutter/3;
+
+$mq-phone-portait-end:400px;
+$mq-phone-end:640px;
+$mq-tablet-end:800px;
+$mq-small-end:1000px;
+$mq-normal-end:1200px;
+
+
+$hide-text-direction:"left";
+$animation-slide-time:200ms;

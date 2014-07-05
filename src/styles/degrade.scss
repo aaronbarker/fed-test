@@ -1,0 +1,81 @@
+@import "variables";
+
+// Docs referenced:
+// http://modernizr.com/docs/
+
+.no-js{
+    .faq dd.collapse{
+        max-height:100%;
+    }
+}
+
+
+.no-flexbox.no-flexboxlegacy{
+
+    #fold_wrapper #main_nav{
+        ul{
+            display:block;
+            overflow:hidden;
+
+            li{
+                float:left;
+                margin-right:1%;
+                margin-bottom:0.5em;
+                width:23%;
+
+
+                a{
+                    width:auto;
+                }
+
+            }
+        }
+
+    }
+
+}
+
+
+.no-cssgradients{
+
+    .button{
+        background-color:$button_color_0;
+    }
+
+}
+
+.no-backgroundsize{
+    #fold_wrapper .hero{
+        background:transparent url(../images/hero1-desktop.jpg) -408px center no-repeat scroll;
+        padding:1em;
+        padding-left:350px;
+
+        h2,p{
+            color:$color_main_fg;
+            max-width:100%;
+            text-shadow:3px 3px 3px darken($grey, 15%);
+        }
+
+    }
+}
+
+
+.no-generatedcontent{
+    #fold_wrapper #main_nav ul li a {
+        display:block;
+        height:auto;
+        padding:1em;
+
+        &:after, &:before{
+            display:none;
+        }
+    }
+}
+
+
+.no-generatedcontent.no-flexbox.no-flexboxlegacy{
+    #fold_wrapper #main_nav ul li{
+        max-width:50%;
+        width:48%;
+    }
+}

@@ -1,0 +1,28 @@
+
+// from compass
+// http://compass-style.org/reference/compass/typography/text/replacement/#const-hide-text-direction
+@mixin hide-text($direction: $hide-text-direction) {
+  @if $direction == left {
+    $approximate-em-value: 12px / 1em;
+    $wider-than-any-screen: -9999em;
+    text-indent: $wider-than-any-screen * $approximate-em-value;
+    overflow: hidden;
+    text-align: left;
+  }
+  @else {
+    // slightly wider than the box prevents issues with inline-block elements
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+
+// clearfix mixin
+@mixin clearfix() {
+  &:after, &:before {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}

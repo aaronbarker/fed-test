@@ -1,0 +1,75 @@
+===
+
+July 5 @ 3:00:
+
+To view the built files, look in ./build/index.html
+To view the source, look in ./src/index.html
+
+====
+
+July 5 @ 8:44: no changes since last commmit, just marking the time...
+
+====
+
+July 4 12:17. Back at it for bit...
+
+====
+
+6:25: no changes, just marking time AFK
+
+===================================
+
+2:54: no changes since last commit, just marking the time...
+
+===================================
+
+12:52: meaningless change to mark time AFK
+
+===================================
+
+Disclaimer, while I haven't been able to dedicate a meaningful chunk of time until today to write code (traveling, work, family, responsibilites, etc), I did clone the repo on Monday, June 30, to review the project requirements and specifications. After reviewing/analyizing the specs, I spent bits of available time reading, learning and fiddling about/with the following topics I think will be relevant to this project / test / opportunity...
+
+
+Grunt
+------
+http://gruntjs.com/getting-started
+http://gruntjs.com/project-scaffolding --> lead me to Yeoman
+
+
+Yeoman
+------
+http://yeoman.io/
+https://github.com/yeoman/generator-webapp
+
+
+
+SVG Icons vs Icon Font
+-----
+http://css-tricks.com/icon-fonts-vs-svg/
+http://css-tricks.com/svg-sprites-use-better-icon-fonts/
+
+
+Icon Fonts
+------
+https://github.com/sapegin/grunt-webfont
+http://css-tricks.com/html-for-icon-font-usage/
+
+
+Flexbox
+-------
+http://caniuse.com/flexbox
+http://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+
+Autoprefixer
+------
+http://css-tricks.com/autoprefixer/
+http://blog.romanliutikov.com/post/63963193492/healthy-css-with-compass-and-autoprefixer
+
+
+Vertical Alignment
+--------
+http://css-tricks.com/vertically-center-multi-lined-text/
+
+
+Starting the 1 hour timer now (2014-07-03 @ 11:11) with an initial commit...
