@@ -14,27 +14,29 @@
 
 $red:#e03031;
 $grey:#5a5a5a;
-$button_color_0:#24b7f3;
-$button_color_1:#1885a6;
+$button-color-0:#24b7f3;
+$button-color-1:#1885a6;
 $tan:#f5f2ea;
 $blue:#05a6cc;
-$menu_color_bg:#e3e3e2;
-$menu_color_fg:#989898;
-$faq_color_bg:#eeeeee;
+$menu-color-bg:#e3e3e2;
+$menu-color-fg:#989898;
+$faq-color-bg:#eeeeee;
 
-$font_serif:"Georgia";
-$font_sans:"Helvetica";
+$font-serif:"Georgia";
+$font-sans:"Helvetica";
 
 
 // base styles
-$color_main_fg:#505050;
-$page_gutter:1.5em;
+$color-main-fg:#505050;
+$page-gutter:1.5em;
+$page-gutter-tablet:$page-gutter/3;
+$page-gutter-mobile:$page-gutter/3;
 
-$mq_phone_portait_end:320px;
-$mq_phone_end:480px;
-$mq_tablet_end:800px;
-$mq_small_end:1000px;
-$mq_normal_end:1200px;
+$mq-phone-portait-end:400px;
+$mq-phone-end:640px;
+$mq-tablet-end:800px;
+$mq-small-end:1000px;
+$mq-normal-end:1200px;
 
 
 $hide-text-direction:"left";

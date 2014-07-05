@@ -11,24 +11,36 @@
 
 //Generic Styles...
 
+
+
+*, *:after, *:before{
+    box-sizing:border-box;
+}
+
+
 ::selection{
     background-color:$red;
     color:white;
     text-shadow:none;
 }
 
-*, *:after, *:before{
-    box-sizing:border-box;
-}
 
+
+
+//base styles
 body{
     background:white;
-    color:$color_main_fg;
+    color:$color-main-fg;
     font-family:$font-sans;
     font-size:16px;
     line-height: 1.5em;
 }
 
+
+
+
+
+// headings typography & color
 
 h1,h2,h3,h4,h5,h6{
     font-family:$font-serif;
@@ -39,6 +51,11 @@ h1,h2{
     color:$red;
 }
 
+
+
+
+
+// links and psuedo links
 a, a:visited, .faq dt{
     color:$blue;
     text-decoration: none;
@@ -48,6 +65,11 @@ a:hover, a:active, .faq dt:hover, .faq dt:active, .faq dt:active:after, .faq dt:
     color:$red;
 }
 
+
+
+
+
+// reset lists
 ul, ol, dl{
     margin:0;
     padding:0;
@@ -61,42 +83,36 @@ li, dt, dd{
 
 
 
-// End Generic, Start Specific //
-header {
-    h1{
-        margin-bottom:0.25em;
-    }
-    small{
-        font-size:1.15em;
-    }
-}
+//
+// End Generic, Start Specific
+//
 
 
-
-
-.wrapper{
-    padding:$page_gutter;
-}
-
-
-.steps, .resources-wrapper, .faq dd, .faq dt{
+// alternating background colors
+.steps, .resources-wrapper{
     background-color:$tan;
-
 }
+
+
+
+
 
 // degrade: cssgradients
 a.button{
     border-radius:5px;
     color:white;
-    background: linear-gradient($button_color_0, $button_color_1);
+    background: linear-gradient($button-color-0, $button-color-1);
     display:inline-block;
     font-size:85%;
     margin:0.5em 0;
     padding:0.5em 1em;
+    text-shadow: none;
     &:hover{
-        background: linear-gradient(lighten($button_color_0,5%), lighten($button_color_1,5%));
+        background: linear-gradient(lighten($button-color-0,5%), lighten($button-color-1,5%));
     }
 }
+
+
 
 // degrade: font-face, generatedcontent
 .video-thumb{
@@ -124,16 +140,33 @@ a.button{
 }
 
 
-// Degrade: backgroundsize, text-shadow
+
+
+
+
+
+// Degrade: backgroundsize, text-shadow (optional), flexbox, fontface, transform, generatedcontent
 #fold_wrapper {
     > *{
         margin-bottom:1.5em;
     }
+
+    //page header's title and subtitle
+    header {
+        h1{
+            margin-bottom:0.25em;
+        }
+        small{
+            font-size:1.15em;
+        }
+    }
+
+
     .hero{
         background:$grey url(../images/hero1-desktop.jpg) right center no-repeat scroll;
         background-size:cover;
         min-height:100%;
-        padding:10%;
+        padding:4em;
 
         h2{
             font-size:250%;
@@ -148,72 +181,77 @@ a.button{
             text-shadow:3px 3px 3px darken($grey, 15%);
         }
     }
-}
 
-// Degrade: flexbox, fontface, transform, generatedcontent
-#main_nav{
-    ul{
-        align-items:center;
-        display:flex;
-        justify-content:space-between;
+    // Degrade: flexbox, fontface, transform, generatedcontent
+    #main_nav{
+        ul{
+            align-items:center;
+            display:flex;
+            justify-content:space-between;
 
-        li{
-            background-color:#e3e3e3;
-            flex-grow:1;
-            list-style: none;
-            margin-right:1em;
-            position:relative;
+            li{
+                background-color:#e3e3e3;
+                flex-grow:1;
+                margin-right:1em;
+                position:relative;
 
 
-            &:last-child{
-                margin-right:0;
-            }
-
-            a{
-                color:$grey;
-                display:table-cell;
-                height:75px;
-                padding:0 50px 0 75px;
-                text-align: left;
-                vertical-align: middle;
-                width:250px;
-                &:before,&:after{
-                    display:block;
-                    font-family:"fedtest-icons";
-                    position:absolute;
-                    text-align:center;
-                    top:0;
-                    line-height:75px;
-                    vertical-align:middle;
-                    width:75px;
-                }
-                &:before{
-                    left:0;
-                    font-size:50px
+                &:last-child{
+                    margin-right:0;
                 }
 
-                &:after{
-                    content:"\f101";
-                    right:1em;
-                    text-align:right;
-                }
-                &:hover, &:active{
-                    color:lighten($grey, 15%);
-                    &:before{
-                        transform: scale(1.1);
+                a{
+                    color:$grey;
+                    display:table-cell;
+                    height:75px;
+                    padding:0 50px 0 75px;
+                    text-align: left;
+                    vertical-align: middle;
+                    width:250px;
 
+                    // prepare icon-font spaces
+                    &:before,&:after{
+                        display:block;
+                        font-family:"fedtest-icons";
+                        position:absolute;
+                        text-align:center;
+                        top:0;
+                        line-height:75px;
+                        vertical-align:middle;
+                        width:75px;
                     }
-                }
 
+                    &:before{
+                        left:0;
+                        font-size:50px
+                    }
+
+                    &:after{
+                        content:"\f101";
+                        right:1em;
+                        text-align:right;
+                    }
+
+                    &:hover, &:active{
+                        color:lighten($grey, 15%);
+                        &:before{
+                            transform: scale(1.1);
+
+                        }
+                    }
+
+                }
             }
         }
     }
+
 }
+
 
 .steps{
 
     small{
-        color:$color_main_fg;
+        color:$color-main-fg;
         font-family:$font-sans;
         font-size:50%;
         display:block;
@@ -241,13 +279,16 @@ a.button{
 // Degrade: fontface (optional), transform(optional), animations(optional), generatedcontent
 .faq {
     dt{
+        background-color:$tan;
         cursor:pointer;
         margin-top:0.5em;
         padding:0.5em 3em 0.5em 0.5em;
         position:relative;
+
         &:first-child{
             margin-top:0;
         }
+
         &:after{
             color:$grey;
             content:"\f101";
@@ -259,13 +300,16 @@ a.button{
             animation:turn-down-undo $animation-slide-time ease-in-out;
             vertical-align:middle;
         }
+
         &.expanded:after{
             animation:turn-down $animation-slide-time ease-in-out;
             transform:rotate(90deg);
         }
+
     }
 
     dd{
+        background-color:$tan;
         overflow:hidden;
         padding:0 0.5em;
 
@@ -295,32 +339,91 @@ a.button{
 
 //// Responsive Defs \\\
 
+
+// Media Queries -- General
+
+
 // All phones and (PH|T)ablets
-@media screen and (max-width:$mq_tablet_end){
-    #fold_wrapper .hero{
-        > h2, > p{
-            max-width: 100%;
-        }
+@media screen and (max-width:$mq-tablet-end){
+
+    .wrapper{
+        padding:$page-gutter-mobile;
     }
 
-    #main_nav ul li a {
-        @include hide-text();
-        display:block;
+
+
+
+    #fold_wrapper{
+
         padding:0;
-        width:0;
-        &:after{
-            display:none;
-            width:0;
+
+        header{
+            background:linear-gradient(rgba(40,40,40,.95), rgba(40,40,40,0));
+            position:absolute;
+            left:0;
+            right:0;
+            padding:0 $page-gutter-mobile 2em;
+
+            h1, small{
+                color:white;
+                display:block;
+            }
+            small{
+                font-size:0.75em;
+            }
         }
-        &:before{
-            display:block;
-            overflow:hidden;
-            text-align:center;
-            text-indent:0;
-            width:100%;
+
+
+        .hero{
+
+            min-height:300px;
+            padding:300px 1em 1em;
+
+            h2, p{
+                margin:0;
+                padding:0;
+                max-width: 100%;
+                text-align:right;
+            }
+
+            h2{
+                font-size:1.5em;
+            }
+
+            p{
+                font-size:0.75em;
+            }
+
+            a{
+                text-align:right;
+            }
+
+        }
+
+        #main_nav {
+
+            margin-left: $page-gutter-mobile;
+            margin-right: $page-gutter-mobile;
+
+            ul li a {
+                @include hide-text();
+                display:block;
+                padding:0;
+                width:0;
+                &:after{
+                    display:none;
+                    width:0;
+                }
+                &:before{
+                    display:block;
+                    overflow:hidden;
+                    text-align:center;
+                    text-indent:0;
+                    width:100%;
+                }
+            }
         }
     }
-
 }
 
 
@@ -330,9 +433,14 @@ a.button{
 // All Desktops
 
 // Degrade: box-shadow (optional), transform (optional), background-size
-@media screen and (min-width: $mq_tablet_end+1){
+@media screen and (min-width: $mq-tablet-end+1){
 
-    #main_nav a{
+    .wrapper{
+        padding:$page-gutter;
+    }
+
+
+    #main-nav a{
         font-size:85%;
         line-height:1.25em;
     }
@@ -360,7 +468,7 @@ a.button{
             &:nth-child(odd){
                 padding-right:500px;
                 &:after{
-                    right:$page_gutter;
+                    right:$page-gutter;
                 }
                 &:before{
                     display:none;
@@ -406,12 +514,14 @@ a.button{
 }
 
 
-// Mobile in Portrait Only
-@media screen and (max-width:$mq_phone_portait_end){
-    #main_nav ul li a:before{
-        font-size:32px;
 
-        // line-height:1.25em;
+// Media Queries -- Targeted Tweaks
+
+
+// Mobile - Portrait Mode Only
+@media screen and (max-width:$mq-phone-portait-end){
+    #fold_wrapper #main_nav ul li a:before{
+        font-size:32px;
     }
 }
 
@@ -419,7 +529,8 @@ a.button{
 
 
 // Mobile Only
-@media screen and (max-width:$mq_phone_end){
+@media screen and (max-width:$mq-phone-end){
+
     .steps .links li {
         float:none;
         margin-bottom:1em;
@@ -431,11 +542,11 @@ a.button{
 
 
 // (PH|T)ablet Only
-@media screen and (min-width: $mq_phone_end+1) and (max-width:$mq_tablet_end){}
+@media screen and (min-width: $mq-phone-end+1) and (max-width:$mq-tablet-end){}
 
 
 // Small Desktop only
-@media screen and (min-width: $mq_tablet_end+1) and (max-width:$mq_small_end){
+@media screen and (min-width: $mq-tablet-end+1) and (max-width:$mq-small-end){
     #main_nav a{
         font-size:75%;
         line-height:1.25em;
@@ -443,8 +554,9 @@ a.button{
 
 }
 
+
 // Big o' Desktops Only
-@media screen and (min-width: $mq_normal_end + 1){
+@media screen and (min-width: $mq-normal-end + 1){
     #main_nav a{
         font-size:100%;
     }
@@ -452,7 +564,7 @@ a.button{
     .wrapper > *{
         margin-left:auto;
         margin-right:auto;
-        width:$mq_normal_end - 50;
+        width:$mq-normal-end - 50;
     }
 }
 
@@ -492,7 +604,7 @@ a.button{
 }
 
 
-// For sad people
+// for sad people
 .browsehappy {
     background: $red;
     color: white;
