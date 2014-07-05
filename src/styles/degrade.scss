@@ -12,7 +12,7 @@
 
 .no-flexbox.no-flexboxlegacy{
 
-    #main_nav{
+    #fold_wrapper #main_nav{
         ul{
             display:block;
             overflow:hidden;
@@ -21,10 +21,8 @@
                 float:left;
                 margin-right:1%;
                 margin-bottom:0.5em;
-                width:49%;
-                &:nth-child(even){
-                    margin-right:0;
-                }
+                width:23%;
+
 
                 a{
                     width:auto;
@@ -63,7 +61,7 @@
 
 
 .no-generatedcontent{
-    #main_nav ul li a {
+    #fold_wrapper #main_nav ul li a {
         display:block;
         height:auto;
         padding:1em;
@@ -71,5 +69,13 @@
         &:after, &:before{
             display:none;
         }
+    }
+}
+
+
+.no-generatedcontent.no-flexbox.no-flexboxlegacy{
+    #fold_wrapper #main_nav ul li{
+        max-width:50%;
+        width:48%;
     }
 }

@@ -140,8 +140,9 @@ a.button{
 }
 
 
-
-
+.wrapper{
+    padding:$page-gutter;
+}
 
 
 
@@ -184,6 +185,7 @@ a.button{
 
     // Degrade: flexbox, fontface, transform, generatedcontent
     #main_nav{
+        overflow:hidden;
         ul{
             align-items:center;
             display:flex;
@@ -191,8 +193,10 @@ a.button{
 
             li{
                 background-color:#e3e3e3;
+                // display:table;
                 flex-grow:1;
                 margin-right:1em;
+                max-width:25%;
                 position:relative;
 
 
@@ -439,6 +443,9 @@ a.button{
         padding:$page-gutter;
     }
 
+    #fold_wrapper > *:last-child{
+        margin-bottom:0;
+    }
 
     #main-nav a{
         font-size:85%;
@@ -542,7 +549,7 @@ a.button{
 
 
 // (PH|T)ablet Only
-@media screen and (min-width: $mq-phone-end+1) and (max-width:$mq-tablet-end){}
+// @media screen and (min-width: $mq-phone-end+1) and (max-width:$mq-tablet-end){}
 
 
 // Small Desktop only
