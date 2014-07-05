@@ -15,6 +15,8 @@
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/fedtest-icons.css">
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/degrade.css">
+
         <!-- endbuild -->
 
         <!-- build:js scripts/vendor/modernizr.js -->
@@ -24,10 +26,11 @@
     </head>
     <body>
         <!--[if lt IE 10]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <p class="browsehappy" role="alert">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div class="wrapper" id="fold_wrapper">
-            <header>
+            <!-- Docs referenced: http://www.w3.org/TR/wai-aria/roles#banner -->
+            <header role="banner">
                 <h1>This is a website</h1>
                 <small>A sub-title that will encourage action by a user</small>
             </header>
@@ -83,16 +86,16 @@
                 <h2>Frequently Asked Questions</h2>
                 <dl>
                     <dt>Why is the sky blue?</dt>
-                    <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur numquam ducimus voluptatem sequi exercitationem nesciunt atque possimus laboriosam non laudantium! Nisi illo similique impedit libero vitae maiores accusamus. Fugit officia.</dd>
+                    <dd class="collapse">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur numquam ducimus voluptatem sequi exercitationem nesciunt atque possimus laboriosam non laudantium! Nisi illo similique impedit libero vitae maiores accusamus. Fugit officia.</dd>
 
                     <dt>Why is snow white?</dt>
-                   <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur numquam ducimus voluptatem sequi exercitationem nesciunt atque possimus laboriosam non laudantium! Nisi illo similique impedit libero vitae maiores accusamus. Fugit officia.</dd>
+                    <dd class="collapse">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur numquam ducimus voluptatem sequi exercitationem nesciunt atque possimus laboriosam non laudantium! Nisi illo similique impedit libero vitae maiores accusamus. Fugit officia.</dd>
 
                     <dt>How much wood could a wood chuck chuck if a owod chuck could chuck wood?</dt>
-                    <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur numquam ducimus voluptatem sequi exercitationem nesciunt atque possimus laboriosam non laudantium! Nisi illo similique impedit libero vitae maiores accusamus. Fugit officia.</dd>
+                    <dd class="collapse">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur numquam ducimus voluptatem sequi exercitationem nesciunt atque possimus laboriosam non laudantium! Nisi illo similique impedit libero vitae maiores accusamus. Fugit officia.</dd>
 
                     <dt>What color is an orange?</dt>
-                    <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur numquam ducimus voluptatem sequi exercitationem nesciunt atque possimus laboriosam non laudantium! Nisi illo similique impedit libero vitae maiores accusamus. Fugit officia.</dd>
+                    <dd class="collapse">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur numquam ducimus voluptatem sequi exercitationem nesciunt atque possimus laboriosam non laudantium! Nisi illo similique impedit libero vitae maiores accusamus. Fugit officia.</dd>
                 </dl>
             </section>
         </section>

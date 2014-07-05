@@ -1,6 +1,6 @@
 $(function(){
 	'use strict';
-	$('dd').addClass('collapse').prev('dt').click(
+	$('.faq dt').click(
 		function(){
 			$(this).toggleClass('expanded').next('dd').toggleClass('collapse expanded');
 		}
