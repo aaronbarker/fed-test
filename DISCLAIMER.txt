@@ -1,3 +1,11 @@
+===
+
+July 5 @ 3:00:
+
+To view the built files, look in ./build/index.html
+To view the source, look in ./src/index.html
+
+====
 
 July 5 @ 8:44: no changes since last commmit, just marking the time...
 
