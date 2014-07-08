@@ -36,8 +36,8 @@
         				<img src="images/hero1-desktop.jpg" alt="Young Men of the Priesthood">
         				<div class="hero-text">
             				<h2>Let The Youth Lead</h2>
-							<p>Watch Youth in Kansas City get started with on their activities</p>
-							<button class="btn-cta">View Short Video</button>
+							<p>Watch Youth in Kansas City get started on their activities</p>
+							<a class="btn-cta" href="#">View Short Video</a>
 						</div>
 					</figure>
 				</a>
@@ -54,63 +54,71 @@
     </nav>
 </div>
 <div class="beigeContent">
-    <section class="subtle row">
+    <section class="subtle row step1">
         <div class="section-text left">
         	<span class="step">Step 1</span>
         	<h3>The best step you can take</h3>
         	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nemo unde magnam explicabo eum corporis quod laudantium placeat qui accusantium fugiat voluptate. Expedita voluptates blanditiis sunt quidem dignissimos officiis repellat?</p>
         	<div class="actions">
-            	<video class="vid-thumb" width="" height="" poster="images/thumb1.jpg" controls="">
-            		<source src="video.mp4" type="video/mp4">
-				    <source src="video.ogg" type="video/ogg">
-				    <source src="video.webm" type="video/webm">
-				    <object data="video.mp4" width="470" height="255">
-				    <embed src="video.swf" width="470" height="255">
-				    </object>
-				</video>
-	        	<button class="btn-cta">Share Photos and Stories</button>
+                <div class="video">
+                	<video class="vid-thumb" width="" height="" poster="images/thumb1.jpg">
+                		<source src="video.mp4" type="video/mp4">
+    				    <source src="video.ogg" type="video/ogg">
+    				    <source src="video.webm" type="video/webm">
+    				    <object data="video.mp4" width="470" height="255">
+    				    <embed src="video.swf" width="470" height="255">
+    				    </object>
+    				</video>
+                </div>
+	        	<a class="btn-cta">Share Photos and Stories</a>
     		</div>
 	    </div>
 	  	<div class="section-image right">
 	  		<img class="img-responsive" src="images/family-book.jpg" alt="Father, mother and daughter reading together outside">
 	  	</div>
     </section>
-    <section class="subtle row">
+    <section class="subtle row step2">
         <div class="section-image left">
-	  		<img class="img-responsive" src="images/rotated.jpg" alt="Happy woman and teen at the computer">
+            <div class="photostack">
+	  		   <img class="img-responsive" src="images/rotated.jpg" alt="Happy woman and teen at the computer">
+            </div>
 	  	</div>
     	<div class="section-text right">
         	<span class="step">Step 2</span>
         	<h3>Getting higher on the steps</h3>
         	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nemo unde magnam explicabo eum corporis quod laudantium placeat qui accusantium fugiat voluptate. Expedita voluptates blanditiis sunt quidem dignissimos officiis repellat? Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
         	<div class="actions">
-            	<video class="vid-thumb" width="" height="" poster="images/thumb2.jpg" controls="">
-            		<source src="video.mp4" type="video/mp4">
-				    <source src="video.ogg" type="video/ogg">
-				    <source src="video.webm" type="video/webm">
-				    <object data="video.mp4" width="470" height="255">
-				    <embed src="video.swf" width="470" height="255">
-				    </object>
-				</video>
-	        	<button class="btn-cta">View Your Experiences</button>
+                <div class="video">
+                	<video class="vid-thumb" width="" height="" poster="images/thumb2.jpg">
+                		<source src="video.mp4" type="video/mp4">
+    				    <source src="video.ogg" type="video/ogg">
+    				    <source src="video.webm" type="video/webm">
+    				    <object data="video.mp4" width="470" height="255">
+    				    <embed src="video.swf" width="470" height="255">
+    				    </object>
+    				</video>
+                </div>
+	        	<a class="btn-cta">View Your Experiences</a>
     		</div>
 	    </div>
 	</section>
-    <section class="subtle row">
+    <section class="subtle row step3">
         <div class="section-text left">
         	<span class="step">Step 3</span>
         	<h3>No more steps left, you are there</h3>
         	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nemo unde magnam explicabo eum corporis quod laudantium placeat qui accusantium fugiat voluptate. Expedita voluptates blanditiis sunt quidem dignissimos officiis repellat? Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         	<div class="actions">
-            	<video class="vid-thumb" width="" height="" poster="images/thumb3.jpg" controls="">
-            		<source src="video.mp4" type="video/mp4">
-				    <source src="video.ogg" type="video/ogg">
-				    <source src="video.webm" type="video/webm">
-				    <object data="video.mp4" width="470" height="255">
-				    <embed src="video.swf" width="470" height="255">
-				    </object>
-				</video>
-	        	<button class="btn-cta">Walk With Your Family</button>
+                <div class="video">
+                	<video class="vid-thumb" width="" height="" poster="images/thumb3.jpg">
+                		<source src="video.mp4" type="video/mp4">
+    				    <source src="video.ogg" type="video/ogg">
+    				    <source src="video.webm" type="video/webm">
+    				    <object data="video.mp4" width="470" height="255">
+    				    <embed src="video.swf" width="470" height="255">
+    				    </object>
+    				</video>
+                </div>
+	        	<a class="btn-cta">Walk With Your Family</a>
     		</div>
 	    </div>
 	  	<div class="section-image right">
@@ -140,7 +148,12 @@
 		  	</div>
 		</div>
 		<script>
-			$( "#accordion" ).accordion();
+			$(function() {
+                $( "#accordion" ).accordion({
+                heightStyle: "content";
+                collapsible: true
+                });
+            });
 		</script>
     </section>
 </div>
