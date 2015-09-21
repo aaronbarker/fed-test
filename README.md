@@ -1,7 +1,7 @@
 Front-end Developer Test
 ========
 
-Clone this repo and build a page using the test1.jpg file as the deliverable you received from design. The test.html file contains all the text from the design comp so you do not need to re-type it. It also contains other information to help you on your way like fonts and colors.
+Fork this repo and build a page using the test1.jpg file as the deliverable you received from design. The test.html file contains all the text from the design comp so you do not need to re-type it. It also contains other information to help you on your way like fonts and colors.
 
 ## Requirements/instructions
 * The page should be responsive. You may notice this doesn't include comps for sizes below desktop. How it looks is up to you.
