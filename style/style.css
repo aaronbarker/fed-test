@@ -19,21 +19,60 @@ h1, h2, h3, h4, h5 {
   font-weight: normal; }
 
 /* line 21, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+h1 {
+  font-size: 2.7em; }
+
+/* line 24, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+h2 {
+  font-size: 1.7em; }
+
+/* line 27, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
 a {
   color: #05a6cc;
   text-decoration: none; }
 
-/* line 25, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+/* line 31, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
 header, article, #accordion, footer {
-  padding: 20px 40px; }
+  padding: 40px; }
 
-/* line 28, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+/* line 34, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+header > p {
+  font-size: 1.3em;
+  padding-bottom: 21px; }
+
+/* line 38, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+img {
+  width: 100%; }
+
+/* line 41, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
 article, footer {
   background: #f5f2ea; }
 
-/* line 31, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+/* line 44, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
 .max-width {
   max-width: 905px;
   margin: 0 auto; }
+
+/*.content {
+    width: 40%;
+}*/
+/* line 51, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+.left {
+  float: left;
+  padding-right: 10%; }
+
+/* line 55, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+.right {
+  float: right;
+  padding-left: 10%; }
+
+/* line 59, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+.photograph {
+  width: 40%; }
+
+/* line 62, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+.thumb {
+  width: 170px;
+  padding-top: 55px; }
 
 /*# sourceMappingURL=style.css.map */
