@@ -1,2 +1,28 @@
+/* red */
+/* gray */
+/* - #1885a6 */
+/* blue buttons */
+/* tan */
+/* blue links */
+/* gray */
+/* line 11, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #5a5a5a; }
+
+/* line 15, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+h1, h2, h3, h4, h5 {
+  color: #e03031;
+  font-family: Georgia, serif;
+  font-weight: normal; }
+
+/* line 20, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+a {
+  color: #05a6cc;
+  text-decoration: none; }
+
+/* line 24, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+article {
+  background: #f5f2ea; }
 
 /*# sourceMappingURL=style.css.map */

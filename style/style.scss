@@ -1,0 +1,26 @@
+$primary-color: #e03031; /* red */
+$body-color: #5a5a5a; /* gray */
+$buttons: #24b7f3; /* - #1885a6 */  /* blue buttons */
+$bground: #f5f2ea; /* tan */
+$links: #05a6cc; /* blue links */
+$menu_background: #e3e3e2; /* gray */
+$menu_foreground: #989898;
+$faq_background: #eeeeee;
+
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: $body-color;
+}
+h1, h2, h3, h4, h5 {
+    color: $primary-color;
+    font-family: Georgia, serif;
+    font-weight: normal;
+}
+a {
+    color: $links;
+    text-decoration: none;
+}
+article {
+    background: $bground;
+}
