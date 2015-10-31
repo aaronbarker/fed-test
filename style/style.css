@@ -5,24 +5,35 @@
 /* tan */
 /* blue links */
 /* gray */
-/* line 11, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+/* line 10, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
 body {
+  color: #5a5a5a;
+  line-height: 1.6;
   font-family: Helvetica, Arial, sans-serif;
-  color: #5a5a5a; }
+  font-size: 17px; }
 
-/* line 15, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+/* line 16, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
 h1, h2, h3, h4, h5 {
   color: #e03031;
   font-family: Georgia, serif;
   font-weight: normal; }
 
-/* line 20, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+/* line 21, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
 a {
   color: #05a6cc;
   text-decoration: none; }
 
-/* line 24, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
-article {
+/* line 25, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+header, article, #accordion, footer {
+  padding: 20px 40px; }
+
+/* line 28, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+article, footer {
   background: #f5f2ea; }
+
+/* line 31, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+.max-width {
+  max-width: 905px;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */

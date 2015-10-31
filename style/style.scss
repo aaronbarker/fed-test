@@ -7,10 +7,11 @@ $menu_background: #e3e3e2; /* gray */
 $menu_foreground: #989898;
 $faq_background: #eeeeee;
 
-
 body {
-    font-family: Helvetica, Arial, sans-serif;
     color: $body-color;
+    line-height: 1.6;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 17px;
 }
 h1, h2, h3, h4, h5 {
     color: $primary-color;
@@ -21,6 +22,13 @@ a {
     color: $links;
     text-decoration: none;
 }
-article {
+header, article, #accordion, footer {
+    padding:20px 40px;
+}
+article, footer {
     background: $bground;
+}
+.max-width {
+    max-width: 905px;
+    margin:0 auto;
 }
