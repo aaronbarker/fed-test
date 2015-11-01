@@ -40,7 +40,7 @@ a {
   text-decoration: none; }
 
 /* line 40, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
-header, article, #accordion, footer {
+header, article, #faq, footer {
   padding: 40px; }
 
 /* line 43, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
@@ -94,25 +94,27 @@ nav img {
   padding: 0 18px 0 14px;
   float: left; }
 
-/* line 91, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
-nav a:link, nav a:visited {
-  background-image: url("../icons/arrow.svg");
-  background-position: 95% center;
-  background-size: 13px auto;
-  background-repeat: no-repeat;
-  background-color: #e3e3e2;
-  box-sizing: border-box;
-  color: #5A5A5A;
-  font-size: 0.9em;
-  display: block;
-  height: 100%;
-  line-height: 1.3em;
-  vertical-align: middle;
-  padding-top: 10px; }
-
-/* line 106, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
-nav a:hover, nav a:active, nav a:focus {
-  background-color: #eee; }
+/* line 90, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+nav a {
+  /* I wrestled with the text on nav links to try to get them to vertically center, but didn't spend enough time to figure it out. */ }
+  /* line 91, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+  nav a:link, nav a:visited {
+    background-image: url("../icons/arrow.svg");
+    background-position: 95% center;
+    background-size: 13px auto;
+    background-repeat: no-repeat;
+    background-color: #e3e3e2;
+    box-sizing: border-box;
+    color: #5A5A5A;
+    font-size: 0.9em;
+    display: block;
+    height: 100%;
+    line-height: 1.3em;
+    vertical-align: middle;
+    padding-top: 10px; }
+  /* line 106, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+  nav a:hover, nav a:active, nav a:focus {
+    background-color: #eee; }
 
 /* line 112, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
 img {
@@ -156,49 +158,46 @@ article, footer {
   margin-left: 10%;
   border: 3px solid white; }
 
-/* line 146, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+/* There's a small extra space at the bottom of each photo that I wasn't able to fix in the time that I took. */
+/* line 148, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
 .photograph {
   width: 40%; }
 
-/* line 149, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+/* line 151, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
 .thumbBtn {
   margin-top: 58px;
   margin-bottom: 98px; }
 
-/* line 153, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+/* line 155, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
 .thumb {
   width: 170px;
   float: left;
   margin-top: -5px; }
 
-/* line 158, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+/* line 160, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
 footer {
   padding-bottom: 100px; }
-  /* line 160, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+  /* line 162, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
   footer ul {
     padding-top: 10px; }
-  /* line 163, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+  /* line 165, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
   footer li {
     font-size: 0.8em;
     line-height: 2.2em; }
 
-/* line 168, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+/* line 170, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
 .label {
   text-transform: uppercase;
   font-size: 0.8em;
   margin-bottom: -8px; }
 
-/* line 173, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+/* line 175, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
 .clearfix {
   overflow: auto;
   zoom: 1; }
 
-/* line 177, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
-#accordion h3 {
-  /* Temporary until accordion js is added.*/
-  margin-top: 20px; }
-
-/* line 182, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+/* Pulled in this code from a button generator website. */
+/* line 181, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
 .btn {
   background: #24b7f3;
   background-image: -webkit-linear-gradient(top, #24b7f3, #1885a6);
@@ -217,7 +216,7 @@ footer {
   margin-left: 24px;
   padding: 12px 30px 12px 30px;
   text-decoration: none; }
-  /* line 200, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+  /* line 199, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
   .btn:hover {
     background: #29c2ff;
     background-image: -webkit-linear-gradient(top, #29c2ff, #1e97b8);
@@ -227,40 +226,75 @@ footer {
     background-image: linear-gradient(to bottom, #29c2ff, #1e97b8);
     text-decoration: none; }
 
+/* I used the according @ http://codepen.io/thirdtiu/pen/uDyxr */
+/* line 212, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+.accordion {
+  background: #eeeeee; }
+  /* line 214, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+  .accordion dt, .accordion dd {
+    padding: 7px 9px; }
+    /* line 216, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+    .accordion dt a, .accordion dd a {
+      display: block; }
+  /* line 220, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+  .accordion dt {
+    border-top: 5px solid white; }
+    /* line 222, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+    .accordion dt h3 {
+      line-height: 1.3em;
+      margin: 0; }
+  /* line 227, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+  .accordion dd {
+    border-top: none;
+    padding-top: 0; }
+    /* line 230, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+    .accordion dd:last-of-type {
+      position: relative;
+      top: -1px; }
+    /* line 234, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+    .accordion dd p {
+      font-size: .8em;
+      line-height: 1.4em; }
+
+/* The arrows on the FAQ accordion is something I didn't get to. It's been a long day. */
+/* line 242, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+#faq h2 {
+  margin-bottom: 17px; }
+
 @media (max-width: 910px) {
-  /* line 212, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+  /* line 249, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
   nav a:link, nav a:visited {
     font-size: 0.7em;
     line-height: 1em; } }
 
 @media (max-width: 800px) {
-  /* line 220, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+  /* line 257, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
   nav li {
     height: 60px;
     width: 100%;
     float: none;
     margin-right: 0px;
     margin-bottom: 5px; }
-  /* line 227, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+  /* line 264, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
   nav img {
     width: 7%; }
-  /* line 231, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+  /* line 268, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
   nav a:link, nav a:visited {
     font-size: 0.9em; }
-  /* line 234, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+  /* line 271, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
   header .teaser_content p {
     display: none; }
-  /* line 237, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+  /* line 274, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
   header .teaser_content {
     top: 300px;
     left: 91px; } }
 
 @media (max-width: 700px) {
-  /* line 246, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+  /* line 283, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
   .photograph {
     width: 100%;
     margin-bottom: 26px; }
-  /* line 250, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
+  /* line 287, /Users/jonandmel/Documents/JONS WEB DESIGN/GitHub/fed-test/style/style.scss */
   .top {
     margin-left: 0;
     margin-top: -90%; } }

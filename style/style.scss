@@ -37,7 +37,7 @@ a {
     color: $links;
     text-decoration: none;
 }
-header, article, #accordion, footer {
+header, article, #faq, footer {
     padding:40px;
 }
 header {
@@ -87,7 +87,7 @@ nav {
     padding: 0 18px 0 14px;
     float: left;
     }
-    a {
+    a {  /* I wrestled with the text on nav links to try to get them to vertically center, but didn't spend enough time to figure it out. */
         &:link, &:visited {
         background-image: url("../icons/arrow.svg");
         background-position: 95% center;
@@ -143,7 +143,9 @@ article, footer {
     margin-left: 10%;
     border: 3px solid white;
 }
-.photograph {
+
+/* There's a small extra space at the bottom of each photo that I wasn't able to fix in the time that I took. */
+.photograph {  
     width: 40%;
 }
 .thumbBtn {
@@ -174,11 +176,8 @@ footer {
     overflow: auto;
     zoom: 1;
 }
-#accordion h3 {  /* Temporary until accordion js is added.*/
-    margin-top: 20px;
-}
 
-
+/* Pulled in this code from a button generator website. */
 .btn {
     background: #24b7f3;
     background-image: -webkit-linear-gradient(top, #24b7f3, #1885a6);
@@ -207,6 +206,44 @@ footer {
         text-decoration: none;
     }
 }
+
+/* I used the according @ http://codepen.io/thirdtiu/pen/uDyxr */
+
+.accordion {
+    background: $faq_background;
+    dt, dd {
+      padding: 7px 9px;
+      a {
+        display: block;
+      }
+    }
+    dt {
+        border-top: 5px solid white; 
+        h3 {
+        line-height: 1.3em;
+        margin: 0;
+    }
+    }
+    dd {
+    border-top: none;
+    padding-top:0;
+     &:last-of-type {
+        position: relative;
+        top: -1px;
+        }
+    p {
+    font-size: .8em;
+    line-height: 1.4em;
+}
+  }
+}
+
+/* The arrows on the FAQ accordion is something I didn't get to. It's been a long day. */
+#faq h2 {
+    margin-bottom: 17px;
+}
+
+
 
 @media (max-width: 910px) {
     nav a:link, nav a:visited {
