@@ -6,16 +6,18 @@ $links: #05a6cc; /* blue links */
 $menu_background: #e3e3e2; /* gray */
 $menu_foreground: #989898;
 $faq_background: #eeeeee;
+$font-body: Helvetica, Arial, sans-serif;
+$font-header: Georgia, serif;
 
-body {
+    body {
     color: $body-color;
     line-height: 1.6;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: $font-body;
     font-size: 17px;
 }
 h1, h2, h3, h4, h5 {
     color: $primary-color;
-    font-family: Georgia, serif;
+    font-family: $font-header;
     font-weight: normal;
 }
 h1 {
@@ -31,9 +33,50 @@ a {
 header, article, #accordion, footer {
     padding:40px;
 }
-header > p {
+header {
+    > p {
     font-size: 1.3em;
     padding-bottom: 21px;
+    }
+    .teaser_content {
+    color: #FFF;
+    position: absolute;
+    bottom: 337px;
+    left: 200px;
+    }
+    p.teaser_title {
+        font-size: 2.2em;
+        font-family: $font-header;
+    }
+    .teaser_text {
+    width: 34%;
+    }
+}
+nav {
+    ul {
+        margin-top: 26px;
+    }
+    li {
+    float: left;
+    height: 60px;
+    margin-right: 2%;
+    width: 23.5%;
+        &:last-child {
+        margin-right:0;
+        }
+    }
+    a:link, a:visited {
+        background-image: url("../icons/arrow.svg");
+        background-position: 95% center;
+        background-size: 13px auto;
+        background-repeat: no-repeat;
+        background-color: $menu-background;
+        box-sizing: border-box;
+        color: #5A5A5A;
+        font-size: 0.9em;
+        display: block;
+        height: 100%;
+    }
 }
 img {
     width: 100%;
@@ -45,16 +88,15 @@ article, footer {
     max-width: 905px;
     margin: 0 auto;
 }
-/*.content {
-    width: 40%;
-}*/
 .left {
     float: left;
     padding-right: 10%;
 }
 .right {
+    box-shadow: 2px 2px 4px #ddd;
     float: right;
-    padding-left: 10%;
+    margin-left: 10%;
+    border: 3px solid white;
 }
 .photograph {
     width: 40%;
@@ -62,4 +104,22 @@ article, footer {
 .thumb {
     width: 170px;
     padding-top: 55px;
+}
+footer {
+    ul {
+        padding-top:10px;
+    }
+    li {
+        font-size: 0.8em;
+        line-height: 2.2em;
+    }
+}
+.label {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    margin-bottom: -8px;
+}
+.clearfix {
+    overflow: auto;
+    zoom: 1;
 }
