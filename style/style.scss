@@ -38,23 +38,25 @@ header, article, #accordion, footer {
     padding:40px;
 }
 header {
+    position: relative;
     > p {
     font-size: 1.3em;
     padding-bottom: 21px;
     }
     .teaser_content {
-    color: #FFF;
+    color: white;
     position: absolute;
-    bottom: 337px;
-    left: 200px;
+    bottom: 232px;
+    left: 133px;
     }
     p.teaser_title {
         font-size: 2.2em;
         font-family: $font-header;
     }
     .teaser_text {
-    width: 34%;
+    width: 65%;
     padding-bottom: 33px;
+    font-size: 0.93em;
     }
     .btn {
         margin-left:0;
@@ -114,8 +116,20 @@ article, footer {
     box-shadow: 2px 2px 4px #DDD;
     float: left;
     margin-right: 10%;
-    border: 11px solid #fff;
+    border: 11px solid white;
+ 
+    -ms-transform: rotate(-3deg); /* IE 9 */
+    -webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
+    transform: rotate(-3deg);
 }
+.top {
+    -ms-transform: rotate(3deg); /* IE 9 */
+    -webkit-transform: rotate(3deg); /* Chrome, Safari, Opera */
+    transform: rotate(3deg);
+    margin-right: 0;
+    margin-left: -52%;
+}
+
 .right {
     box-shadow: 2px 2px 4px #ddd;
     float: right;
@@ -167,7 +181,7 @@ footer {
       -webkit-box-shadow: 1px 1px 4px #999999;
       -moz-box-shadow: 1px 1px 4px #999999;
     box-shadow: 1px 1px 4px #999999;
-    color: #ffffff;
+    color: white;
     font-size: 13px;
     margin-left: 24px;
     padding: 12px 30px 12px 30px;
