@@ -26,6 +26,10 @@ h1 {
 h2 {
     font-size: 1.7em;
 }
+h3 {
+    color: $links;
+    font-family: $font-body;
+}
 a {
     color: $links;
     text-decoration: none;
@@ -50,6 +54,10 @@ header {
     }
     .teaser_text {
     width: 34%;
+    padding-bottom: 33px;
+    }
+    .btn {
+        margin-left:0;
     }
 }
 nav {
@@ -65,7 +73,13 @@ nav {
         margin-right:0;
         }
     }
-    a:link, a:visited {
+    img {
+    width: 19%;
+    padding: 0 18px 0 14px;
+    float: left;
+    }
+    a {
+        &:link, &:visited {
         background-image: url("../icons/arrow.svg");
         background-position: 95% center;
         background-size: 13px auto;
@@ -76,7 +90,15 @@ nav {
         font-size: 0.9em;
         display: block;
         height: 100%;
+        line-height: 1.3em;
+        vertical-align: middle;
+        padding-top: 10px;
+        }
+        &:hover, &:active, &:focus {
+            background-color: #eee;
+        }
     }
+    
 }
 img {
     width: 100%;
@@ -89,8 +111,10 @@ article, footer {
     margin: 0 auto;
 }
 .left {
+    box-shadow: 2px 2px 4px #DDD;
     float: left;
-    padding-right: 10%;
+    margin-right: 10%;
+    border: 11px solid #fff;
 }
 .right {
     box-shadow: 2px 2px 4px #ddd;
