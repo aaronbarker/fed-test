@@ -31,11 +31,8 @@ body {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
-
-    a:hover {
-        text-decoration: underline;
-    }
 
 img {
     width: auto;
@@ -50,6 +47,13 @@ h1 {
     font-size: 3rem;
     color: #e03031;
     padding-bottom: 25px;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    font-size: 3rem;
+    color: #e03031;
+    padding-bottom: 15px; 
 }
 
 small {
@@ -67,6 +71,13 @@ small {
     top: 50%;
     left: 8%;
     transform: translate3d(0, -50%, 0);
+    -webkit-transform: translate3d(0, -50%, 0);
+    color: #fff;
+    -webkit-filter: blur(0px);
+}
+
+#teaser-1-text > h2{
+    color: #fff;   
 }
 
 #teaser-1 > img {
@@ -80,6 +91,12 @@ small {
     
 }
 
+.btn {
+    background-color: #24b7f3;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    padding: .8em;
+}
 
 .icon {
     /* use !important to prevent issues with browser extensions that change fonts */
