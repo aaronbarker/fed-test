@@ -49,6 +49,7 @@ h1 {
     font-family: Georgia, serif;
     font-size: 3rem;
     color: #e03031;
+    padding-bottom: 25px;
 }
 
 small {
@@ -57,7 +58,27 @@ small {
     color: #5a5a5a;
 }
 
+#teaser-1 {
+    position: relative;
+}
 
+#teaser-1-text {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translate3d(0, -50%, 0);
+}
+
+#teaser-1 > img {
+    width: 100%;
+}
+
+.content-container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+    
+}
 
 
 .icon {
