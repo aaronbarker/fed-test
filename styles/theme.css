@@ -51,7 +51,7 @@ h1 {
 
 h2 {
     font-family: Georgia, serif;
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: #e03031;
     padding-bottom: 15px;
 }
@@ -73,7 +73,7 @@ small {
     transform: translate3d(0, -50%, 0);
     -webkit-transform: translate3d(0, -50%, 0);
     color: #fff;
-    -webkit-filter: blur(0px);
+    -webkit-filter: blur(0);
     text-shadow: rgba(0,0,0,0.87) 0.1em 0.1em 0.1em;
     font-size: 16px;
 }
@@ -97,8 +97,14 @@ small {
     width: 100%;
 }
 
+#menu {
+}
+
+    #menu > div {
+    }
+
 .content-container {
-    padding-top: 25px;
+    padding: 25px 15px 0px 15px;
     margin: 0 auto;
     width: 100%;
     max-width: 960px;
