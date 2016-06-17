@@ -53,7 +53,7 @@ h2 {
     font-family: Georgia, serif;
     font-size: 3rem;
     color: #e03031;
-    padding-bottom: 15px; 
+    padding-bottom: 15px;
 }
 
 small {
@@ -74,28 +74,49 @@ small {
     -webkit-transform: translate3d(0, -50%, 0);
     color: #fff;
     -webkit-filter: blur(0px);
+    text-shadow: rgba(0,0,0,0.87) 0.1em 0.1em 0.1em;
+    font-size: 16px;
 }
 
-#teaser-1-text > h2{
-    color: #fff;   
-}
+    #teaser-1-text > h2 {
+        color: #fff;
+    }
+
+    #teaser-1-text > a {
+        margin-top: 25px;
+        text-shadow: none;
+        display: inline-block;
+        font-size: 14px;
+    }
+
+    #teaser-1-text > p {
+        line-height: 25px;
+    }
 
 #teaser-1 > img {
     width: 100%;
 }
 
 .content-container {
+    padding-top: 25px;
     margin: 0 auto;
     width: 100%;
     max-width: 960px;
-    
 }
 
 .btn {
     background-color: #24b7f3;
+    /* Cross browser support taken from MDN */
+    background-image: -webkit-linear-gradient(top, #24b7f3, #1885a6); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+    background-image: -moz-linear-gradient(top, #24b7f3, #1885a6); /* For Firefox (3.6 to 15) */
+    background-image: linear-gradient(to bottom, #24b7f3, #1885a6); /* Standard syntax; must be last */
     border-radius: 4px;
     -webkit-border-radius: 4px;
     padding: .8em;
+    min-width: 200px;
+    text-align: center;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
 }
 
 .icon {
