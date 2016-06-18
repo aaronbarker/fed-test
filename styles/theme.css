@@ -57,6 +57,7 @@ h2 {
     font-size: 2.5rem;
     color: #e03031;
     padding-bottom: 1rem;
+    text-align: left;
 }
 
 small {
@@ -286,6 +287,54 @@ small {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+.accordion {
+    background-color: #EEEEEE;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+    .accordion > .question {
+        color: #009CD5;
+        font-size: 1.2rem;
+        width: 95%;
+        position: relative;
+    }
+
+        .accordion > .question > i {
+            position: absolute;
+            top: 0;
+            right: -5%;
+            color: #9E9E9E;
+            transition: transform 200ms ease;
+            -webkit-transition: transform 200ms ease;
+            cursor: pointer;
+            -webkit-touch-callout: none !important;
+            -webkit-user-select: none !important;
+            -moz-user-select: none !important;
+            -ms-user-select: none !important;
+            user-select: none !important;
+        }
+
+    .accordion:focus > .question > i {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+    .accordion > .collapse {
+        width: 90%;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .accordion:focus > .collapse {
+        height: auto;
+        margin-top: .25rem;
+    }
+
+    .accordion:last-child {
+        margin-bottom: 3rem;
+    }
 
 .clearfix:before,
 .clearfix:after {
