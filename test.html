@@ -3,8 +3,9 @@
 <head>
     <title>This is a website</title>
     <meta charset="utf-8" />
-    <link href="/styles/reset-min.css" rel="stylesheet" />
-    <link href="/styles/theme.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <link href="styles/reset-min.css" rel="stylesheet" />
+    <link href="styles/theme.css" rel="stylesheet" />
 </head>
 <body>
     <div class="content-container">
@@ -13,21 +14,33 @@
             <small>A sub-title that will encourage action by a user</small>
         </h1>
         <div id="teaser-1">
-            <img src="/images/hero1-desktop.jpg" />
-            <div id="teaser-1-text">
-                <h2>Let The Youth Lead</h2>
-                <p>
-                    Watch Youth in Kansas City get started <br/>
-                    with on their activities
-                </p>
-                <a class="btn">View Short Video</a>
+            <img src="images/hero1-desktop.jpg" />
+            <div id="teaser-1-text-container">
+                <div>
+                    <div id="teaser-1-text">
+                        <h2>Let The Youth Lead</h2>
+                        <p class="hide-phone">
+                            Watch Youth in Kansas City get started <br />
+                            with on their activities
+                        </p>
+                        <a class="btn">View Short Video</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div id="menu">
-            <div><i class="icon">fanchart</i> Pick a Seat Near Stage</div>
-            <div><i class="icon">trees</i> Enjoy Nature</div>
-            <div><i class="icon">camera</i> Share Photos and Stories</div>
-            <div><i class="icon">temple</i> Find a Temple near you</div>
+        <div id="menu" class="clearfix">
+            <div>
+                <a href=""><i class="icon">fanchart</i><i class="icon hide-tablet">arrow</i><span><span>Pick a Seat Near Stage</span></span></a>
+            </div>
+            <div>
+                <a href=""><i class="icon">trees</i><i class="icon hide-tablet">arrow</i><span><span>Enjoy Nature</span></span> </a>
+            </div>
+            <div>
+                <a href=""><i class="icon">camera</i><i class="icon hide-tablet">arrow</i><span><span>Share Photos and Stories</span></span></a>
+            </div>
+            <div>
+                <a href=""><i class="icon">temple</i><i class="icon hide-tablet">arrow</i><span><span>Find a Temple near you</span></span></a>
+            </div>
         </div>
     </div>
     <div class="section">
@@ -36,14 +49,14 @@
             <h2>The best step you can take</h2>
             <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nemo unde magnam explicabo eum corporis quod laudantium placeat qui accusantium fugiat voluptate. Expedita voluptates blanditiis sunt quidem dignissimos officiis repellat?</div>
             <img src="images/thumb1.jpg" />
-            <img src="/images/family-book.jpg" />
+            <img src="images/family-book.jpg" />
             <div>Share Photos and Stories</div>
         </div>
         <div class="step">
             <div>Step 2</div>
             <h2>Getting higher on the steps</h2>
             <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nemo unde magnam explicabo eum corporis quod laudantium placeat qui accusantium fugiat voluptate. Expedita voluptates blanditiis sunt quidem dignissimos officiis repellat? Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-            <img src="/images/thumb2.jpg" />
+            <img src="images/thumb2.jpg" />
             <div>View Your Experiences</div>
         </div>
         <div class="step">
