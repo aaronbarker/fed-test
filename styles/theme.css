@@ -1,3 +1,11 @@
+/*
+    references
+        https://developer.mozilla.org/en-US/
+        http://stackoverflow.com/
+        https://css-tricks.com/
+        My previously written code
+*/
+
 @font-face {
     font-family: 'church';
     src: url('../fonts/church.ttf?ow1r3n') format('truetype'), url('../fonts/church.woff?ow1r3n') format('woff'), url('../fonts/church.svg?ow1r3n#church') format('svg');
@@ -66,6 +74,8 @@ small {
     font-size: .5em;
     color: #5a5a5a;
 }
+
+/* ids */
 
 #teaser-1 {
     position: relative;
@@ -207,6 +217,8 @@ small {
     width: 50%;
 }
 
+/* classes */
+
 .content-container {
     padding: 1.5rem 1rem 0 1rem;
     margin: 0 auto;
@@ -337,6 +349,7 @@ small {
     background-color: #EEEEEE;
     margin-bottom: 1rem;
     padding: 1rem;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
     .accordion > .question {
@@ -381,6 +394,8 @@ small {
         margin-bottom: 3rem;
     }
 
+/* helper classes */
+
 .clearfix:before,
 .clearfix:after {
     display: table !important;
@@ -392,12 +407,6 @@ small {
     clear: both !important;
 }
 
-.ellipsis {
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    white-space: nowrap !important;
-}
-
 .section {
     background-color: #F5F2EB;
 }
@@ -406,6 +415,7 @@ small {
     font-weight: 600;
 }
 
+/* tablet */
 
 @media (min-width: 768px) and (max-width: 979px) {
     .hide-tablet {
@@ -413,11 +423,14 @@ small {
     }
 }
 
+/* phone */
+
 @media (max-width: 767px) {
     html {
         font-size: 12px;
     }
 
+    /* ids */
     #teaser-1-text {
         vertical-align: top;
         padding-top: 2%;
@@ -433,6 +446,8 @@ small {
             width: 100%;
         }
 
+    /*classes */
+
     .left-column, .right-column {
         width: 100% !important;
     }
@@ -441,6 +456,8 @@ small {
         display: none !important;
     }
 }
+
+/* small-phone */
 
 @media (max-width: 479px) {
     .hide-small-phone {
