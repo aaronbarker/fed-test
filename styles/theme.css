@@ -164,6 +164,36 @@ small {
             width: 100%;
         }
 
+#polaroid-rotated {
+    position: relative;
+    border: 8px solid #fff;
+    border-radius: 2px;
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+}
+
+#fake-polaroid {
+    position: relative;
+}
+
+#fake-polaroid:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 8px solid #fff;
+    border-radius: 2px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+    background-color: #9A968D; 
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
 #resources > a {
     padding-bottom: 1.3rem;
 }
@@ -189,6 +219,7 @@ small {
 }
 
 .left-column, .right-column {
+    position: relative;
     text-align: justify;
 }
 
@@ -209,12 +240,12 @@ small {
     }
 
     .media-right > .right-column {
-        padding-left: 2.5rem;
+        padding-left: 4rem;
         width: 40%;
     }
 
     .media-left > .left-column {
-        padding-right: 2.5rem;
+        padding-right: 4rem;
         width: 40%;
     }
 
