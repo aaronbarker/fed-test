@@ -31,6 +31,8 @@ body {
 }
 
 a {
+    display: block;
+    color: #05a6cc;
     text-decoration: none;
     cursor: pointer;
 }
@@ -52,14 +54,7 @@ h1 {
 
 h2 {
     font-family: Georgia, serif;
-    font-size: 2.8rem;
-    color: #e03031;
-    padding-bottom: 1rem;
-}
-
-h3 {
-    font-family: Georgia, serif;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     color: #e03031;
     padding-bottom: 1rem;
 }
@@ -92,7 +87,7 @@ small {
 #teaser-1-text {
     display: table-cell;
     vertical-align: middle;
-    padding-left: 7%;
+    padding-left: 11%;
     color: #fff;
     text-shadow: rgba(0,0,0,0.87) 0.1em 0.1em 0.1em;
     font-size: 1rem;
@@ -191,18 +186,58 @@ small {
     float: right;
 }
 
-.media-right > .left-column {
-    width: 60%;
+.media-right, .media-left {
+    padding-bottom: 5rem;
 }
 
-.media-right > .right-column {
-    padding-left: 2.5rem;
-    width: 40%;
+    .media-right > .left-column {
+        width: 60%;
+    }
+
+    .media-right > .right-column {
+        padding-left: 2.5rem;
+        width: 40%;
+    }
+
+    .media-left > .left-column {
+        padding-right: 2.5rem;
+        width: 40%;
+    }
+
+    .media-left > .right-column {
+        width: 60%;
+    }
+
+.thumbnail-media {
+    padding-top: 3rem;
 }
 
+.thumbnail {
+    max-width: 170px;
+    margin-right: 1.5rem;
+    float: left;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #BCB4B2;
+}
 
-
-
+    .thumbnail > i {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 2rem;
+        width: 2rem;
+        font-size: 2rem;
+        margin: auto;
+        background-color: rgba(0,0,0,0.3);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        color: #FEFDFF;
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+        -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+    }
 
 .polaroid {
     border: 3px solid #fff;
@@ -212,6 +247,7 @@ small {
 }
 
 .btn {
+    display: inline-block;
     background-color: #24b7f3;
     /* Cross browser support taken from MDN */
     background-image: -webkit-linear-gradient(top, #26B5ED, #1386A5); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
@@ -219,7 +255,7 @@ small {
     background-image: linear-gradient(to bottom, #26B5ED, #1386A5); /* Standard syntax; must be last */
     border-radius: 4px;
     -webkit-border-radius: 4px;
-    padding: .8em;
+    padding: .6em .8em;
     min-width: 150px;
     text-align: center;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
@@ -288,12 +324,10 @@ small {
         font-size: 12px;
     }
 
-    h2 {
-        font-size: 2.5rem;
-    }
-
-    #teaser-1-text > a {
-        margin-top: 0;
+    #teaser-1-text {
+        vertical-align: top;
+        padding-top: 2%;
+        padding-left: 2%;
     }
 
     #menu > div {
@@ -305,7 +339,17 @@ small {
             width: 100%;
         }
 
+    .left-column, .right-column {
+        width: 100% !important;
+    }
+
     .hide-phone {
+        display: none !important;
+    }
+}
+
+@media (max-width: 479px) {
+    .hide-small-phone {
         display: none !important;
     }
 }
