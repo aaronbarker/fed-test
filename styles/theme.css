@@ -138,8 +138,8 @@ small {
                 #menu > div > a > span > span {
                     display: table-cell;
                     vertical-align: middle;
-                    padding-left: 10px;
-                    padding-right: 10px;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
                     font-weight: 600;
                 }
 
@@ -149,7 +149,7 @@ small {
                 line-height: 4rem;
                 font-size: 2.8rem;
                 color: #9B9B9B;
-                padding: 0 5px 0 10px;
+                padding: 0 0 0 1rem;
             }
 
                 #menu > div > a > i:first-child + i {
@@ -157,12 +157,25 @@ small {
                     float: right;
                     line-height: 4rem;
                     color: #9B9B9B;
-                    padding: 0 10px 0 5px;
+                    padding: 0 1rem 0 0;
                 }
 
         #menu > div:last-child > a {
             width: 100%;
         }
+
+#resources > a {
+    padding-bottom: 1.3rem;
+}
+
+#resources {
+    padding-bottom: 3rem;
+}
+
+#resources > img {
+    float: right;
+    width: 50%;
+}
 
 .content-container {
     padding: 1.5rem 1rem 0 1rem;
@@ -188,7 +201,7 @@ small {
 }
 
 .media-right, .media-left {
-    padding-bottom: 5rem;
+    padding-bottom: 4rem;
 }
 
     .media-right > .left-column {
@@ -220,6 +233,7 @@ small {
     position: relative;
     cursor: pointer;
     border: 1px solid #BCB4B2;
+    margin-bottom: 1rem;
 }
 
     .thumbnail > i {
