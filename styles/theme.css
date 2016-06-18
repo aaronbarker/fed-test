@@ -57,6 +57,13 @@ h2 {
     padding-bottom: 1rem;
 }
 
+h3 {
+    font-family: Georgia, serif;
+    font-size: 2.2rem;
+    color: #e03031;
+    padding-bottom: 1rem;
+}
+
 small {
     display: block;
     padding-top: .25em;
@@ -121,7 +128,7 @@ small {
 
         #menu > div > a {
             display: block;
-            width: 90%;
+            width: 91%;
             background: #e3e3e2;
             height: 4rem;
             color: #5a5a5a;
@@ -168,6 +175,42 @@ small {
     max-width: 960px;
 }
 
+.step {
+    position: relative;
+}
+
+.left-column, .right-column {
+    text-align: justify;
+}
+
+.left-column {
+    float: left;
+}
+
+.right-column {
+    float: right;
+}
+
+.media-right > .left-column {
+    width: 60%;
+}
+
+.media-right > .right-column {
+    padding-left: 2.5rem;
+    width: 40%;
+}
+
+
+
+
+
+.polaroid {
+    border: 3px solid #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+}
+
 .btn {
     background-color: #24b7f3;
     /* Cross browser support taken from MDN */
@@ -181,6 +224,8 @@ small {
     text-align: center;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
     -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+    color: #fff;
+    white-space: nowrap !important;
 }
 
 .icon {
@@ -223,6 +268,15 @@ small {
     white-space: nowrap !important;
 }
 
+.section {
+    background-color: #F5F2EB;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+
 @media (min-width: 768px) and (max-width: 979px) {
     .hide-tablet {
         display: none !important;
@@ -235,7 +289,7 @@ small {
     }
 
     h2 {
-        font-size: 2.5rem;    
+        font-size: 2.5rem;
     }
 
     #teaser-1-text > a {
